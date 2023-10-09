@@ -32,7 +32,6 @@ function Skills() {
   return (
     <div id="skills">
       {/* <h1>Skills and Tools</h1> */}
-
       {skills.map((item) => (
         <div className="skills-card">
           <img className="skills-card-img" src={item.img} alt="" />

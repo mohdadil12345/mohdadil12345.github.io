@@ -77,7 +77,6 @@ html {
 //  skills and tools
 
 #skills {
-//   background-color: red;
 
   display: grid;
   grid-template-columns: repeat(3, 15%);
@@ -86,12 +85,13 @@ html {
 
 
   .skills-card {
-    // border: 2px solid black;
+    border: 2px solid black;
     width: max-content;
     text-align: center;
     color: black;
   }
   .skills-card-img {
     width: 200px;
+    height: 100px;
   }
 }
