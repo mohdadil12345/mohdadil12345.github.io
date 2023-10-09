@@ -5,6 +5,7 @@ import About from "./About"
 import Skills from "./Skills"
 import Projects from "./Projects"
 import Contact from "./Contact"
+import Github from './Github'
 
 function AllRoutes() {
   return (
@@ -13,6 +14,7 @@ function AllRoutes() {
       <Home/>
       <About/>
       <Skills/>
+      <Github/>
       <Projects/>
       <Contact/>
     </div>
