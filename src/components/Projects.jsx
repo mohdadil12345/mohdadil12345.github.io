@@ -31,7 +31,7 @@ function Projects() {
             />
           </div>
           <div className="pro-anchortag">
-            <a className="project-github-link" href="">
+            <a className="project-github-link" href="https://github.com/mymsa123/quixotic-snail-9802">
               <button>Github Code</button>
             </a>
             <a className="project-deployed-link" href="">

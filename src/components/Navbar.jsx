@@ -14,7 +14,7 @@ function Navbar() {
         <a className='nav-link skills' href="#skills">Skills</a>
         <a className='nav-link projects' href="#project">Projects</a>
         <a className='nav-link contact' href="#contact">Contact</a>
-        <a className='nav-link resume' href="#resume">Resume</a>
+        <a className='nav-link resume' id='resume-button-1' href="#resume">Resume</a>
 
 
 
