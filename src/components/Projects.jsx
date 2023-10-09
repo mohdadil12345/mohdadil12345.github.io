@@ -7,7 +7,7 @@ function Projects() {
   return (
     <div id="projects">
       <h1>Projects</h1>
-      <div className='"project-card"'>
+      <div className="project-card">
         <div className="pro-img">
           <img src={img1} alt="" />
         </div>
@@ -41,7 +41,7 @@ function Projects() {
         </div>
       </div>
       {/* doosra */}
-      <div className='"project-card"'>
+      <div className="project-card">
         <div className="pro-img">
           <img src={img1} alt="" />
         </div>
@@ -75,7 +75,7 @@ function Projects() {
         </div>
       </div>
       {/* third */}
-      <div className='"project-card"'>
+      <div className="project-card">
         <div className="pro-img">
           <img src={img1} alt="" />
         </div>
@@ -110,7 +110,7 @@ function Projects() {
       </div>
 
       {/* fourth */}
-      <div className='"project-card"'>
+      <div className="project-card">
         <div className="pro-img">
           <img src={img1} alt="" />
         </div>
