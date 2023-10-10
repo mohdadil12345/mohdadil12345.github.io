@@ -13,7 +13,7 @@ export default function Github() {
       >
         Github
       </h1>
-      <div style={{ width: "90%", margin: "auto", marginBottom: "10px" }}>
+      <div>
         <GitHubCalendar username="mohdadil12345"></GitHubCalendar>
       </div>
 
@@ -21,21 +21,21 @@ export default function Github() {
 
       <img
         id="github-top-langs"
-        style={{ width: "100%" }}
+        // style={{ width: "100%" }}
         src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohdadil12345&theme=light&hide_border=false&include_all_commits=false&count_private=true&layout=compact"
         alt="mohdadil12345"
       />
 
       <img
         id="github-stats-card"
-        style={{ width: "100%" }}
+        // style={{ width: "100%" }}
         src="https://github-readme-stats.vercel.app/api?username=mohdadil12345&theme=light&hide_border=false&include_all_commits=true&count_private=true"
         alt="mohdadil12345"
       />
 
       <img
         id="github-streak-stats"
-        style={{ width: "100%" }}
+        // style={{ width: "100%" }}
         src="https://github-readme-streak-stats.herokuapp.com?user=mohdadil12345"
         alt="mohdadil12345"
       />
