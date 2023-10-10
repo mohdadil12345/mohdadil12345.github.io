@@ -112,6 +112,9 @@ html {
       font-size: 150px;
       filter: drop-shadow(2px 4px 6px black);
     }
+    p{
+      filter: drop-shadow(4px 4px 1px rgb(0, 29, 126));
+    }
   }
   .skills-card-img {
     width: 200px;
@@ -169,6 +172,7 @@ html {
   .project-tech-stack {
     display: flex;
     justify-content: center;
+
 
     .skills-card {
       width: max-content;
