@@ -1,25 +1,26 @@
-import React from 'react'
+import React from "react";
 
-import myimg from "../assests/my img.jpeg"
-import myimg1 from "../assests/me.png"
+import myimg from "../assests/my img.jpeg";
+import myimg1 from "../assests/me.png";
 
 function Home() {
   return (
     <div id="home">
-      <h1>Home</h1>
 
+  
+      <div className="my-info">
+        <h2>Hey there! </h2>
+        <h2 id="user-detail-name">I am Mohd Adil</h2>
+        <a className="nav-link resume" href="">
+          <button id="resume-button-2">Resume</button>
+        </a>
+      </div>
       <div >
         <img className="home-img" src={myimg1} alt="" />
       </div>
 
-      <div className='my-info'>
-     <h3>Hello, I'm </h3>
-     <h4 id='user-detail-name'>Mohd Adil</h4>
-     <a className='nav-link resume' href=""><button id='resume-button-2'>Resume</button></a>
-      </div>
-
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
