@@ -265,7 +265,17 @@ html {
     margin-top: 30px;
     border-radius: 8px;
     border: none;
+
   }
+  button:hover{
+
+    background-color: tomato;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+
+  }
+ 
 }
 .my-info {
   background-image: linear-gradient(-45deg, rgb(252, 252, 252), rgb(81, 81, 81));

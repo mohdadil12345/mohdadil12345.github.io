@@ -10,7 +10,7 @@ import { FaCss3Alt, FaJsSquare, FaHtml5 } from "react-icons/fa";
 let projects = [
 
   {
-    title: "project-1",
+    title: "Sasta safar",
     img: sastasafar,
     description: "des-1",
     skills: [
