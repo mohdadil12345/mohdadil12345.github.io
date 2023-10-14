@@ -40,7 +40,7 @@ function Skills() {
    
       {skills.map((item) => (
         <div className="skills-card">
-          <div>{item.icon}</div>
+          <div className="skills-card-img">{item.icon}</div>
           <p className="skills-card-name">{item.name}</p>
         </div>
       ))}

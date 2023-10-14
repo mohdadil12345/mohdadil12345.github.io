@@ -1,15 +1,18 @@
 import React from "react";
 import sastasafar from "../assests/sastasafar.png";
-import oddgrass from "../assests/oddgrass.png";
+import oddgrass from "../assests/oddgrass.jpeg";
+import dressify from "../assests/dressify.jpeg";
+
 
 import { FaCss3Alt, FaJsSquare, FaHtml5 } from "react-icons/fa";
 // https://react-icons.github.io/react-icons/icons?name=fa
 
 let projects = [
+
   {
-    title: "Sastasafar",
+    title: "project-1",
     img: sastasafar,
-    description: "Dressify is one-stop destination for fashionable clothing and accessories for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
+    description: "des-1",
     skills: [
       {
         name: "HTML",
@@ -24,13 +27,13 @@ let projects = [
         icon: <FaJsSquare />,
       },
     ],
-    git: "https://github.com/astik0398/ambiguous-oven-8467",
-    preview: "https://dressify-shopping.netlify.app/",
+    git: "https://github.com/mymsa123/quixotic-snail-9802",
+    preview: "https://glittery-elf-a56a10.netlify.app/",
   },
   {
-    title: "project-2",
-    img: oddgrass,
-    description: "des-2",
+    title: "Dressify",
+    img: dressify,
+    description: "Dressify is one-stop destination for fashionable clothing and accessories for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
     skills: [
       {
         name: "HTML",
