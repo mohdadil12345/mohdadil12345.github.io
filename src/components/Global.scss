@@ -131,9 +131,9 @@ html {
     flex-wrap: wrap;
     text-align: center;
     .project-card {
-      // box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
       width: 400px;
-      background-image: linear-gradient(-45deg,rgb(255, 255, 255),rgb(241, 241, 241));
+      background-image: linear-gradient(-45deg,rgb(0, 0, 0),rgb(217, 213, 213));
       background-size: 200%;
       color: rgb(29, 28, 28);
       border-radius: 8px;
@@ -201,4 +201,36 @@ html {
     height: 100px;
     width: 200px;
   }
+}
+
+#contact{
+  background-image: linear-gradient(-45deg,rgb(26, 26, 27),rgb(81, 81, 81));
+
+  .contact_details{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      color: white;
+      gap: 10px;
+      padding: 30px;
+
+      a{
+        color: white;
+      }
+    
+
+      .my_icon{
+        display: flex;
+        gap: 20px;
+
+        svg {
+          font-size: 30px;
+          filter: drop-shadow(2px 4px 6px black);
+        }
+      }
+  }
+
+ 
 }
