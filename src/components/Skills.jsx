@@ -40,6 +40,7 @@ function Skills() {
    
       {skills.map((item) => (
         <div className="skills-card">
+          {/* className="skills-card-img" */}
           <div className="skills-card-img">{item.icon}</div>
           <p className="skills-card-name">{item.name}</p>
         </div>
