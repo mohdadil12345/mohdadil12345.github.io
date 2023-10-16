@@ -13,11 +13,15 @@ export default function Github() {
       >
         Github
       </h1>
-      <div>
+      <div className="hh">
         <GitHubCalendar username="mohdadil12345"></GitHubCalendar>
       </div>
 
       {/* <p  style={{ width: "120%",textAlign:"center",marginLeft:"25px",marginBottom:"20px" }}></p> */}
+
+
+<div className="img_div">
+
 
       <img
         id="github-top-langs"
@@ -39,6 +43,9 @@ export default function Github() {
         src="https://github-readme-streak-stats.herokuapp.com?user=mohdadil12345"
         alt="mohdadil12345"
       />
+
+
+</div>
     </div>
   );
 }
