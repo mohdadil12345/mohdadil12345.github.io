@@ -1,5 +1,7 @@
 import React from "react";
 import sastasafar from "../assests/sastasafar.png";
+import abc from "../assests/abc.png";
+import abc2 from "../assests/abc2.png";
 import oddgrass from "../assests/oddgrass.jpeg";
 import dressify from "../assests/dressify.jpeg";
 
@@ -11,8 +13,9 @@ let projects = [
 
   {
     title: "Sasta safar",
-    img: sastasafar,
-    description: "des-1",
+    img1: abc,
+    img2: abc2,
+    description: "Dressify is one-stop destination for fashionable clothing and accessories for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
     skills: [
       {
         name: "HTML",
@@ -32,7 +35,8 @@ let projects = [
   },
   {
     title: "Dressify",
-    img: dressify,
+    img1: abc,
+    img2: abc2,
     description: "Dressify is one-stop destination for fashionable clothing and accessories for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
     skills: [
       {
@@ -53,8 +57,10 @@ let projects = [
   },
   {
     title: "project-1",
-    img: sastasafar,
-    description: "des-1",
+    img1: abc,
+    img2: abc2,
+    description: "Dressify is one-stop destination for fashionable clothing and accessories for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
+
     skills: [
       {
         name: "HTML",
@@ -74,8 +80,10 @@ let projects = [
   },
   {
     title: "project-2",
-    img: oddgrass,
-    description: "des-2",
+    img1: abc,
+    img2: abc2,
+    description: "Dressify is one-stop destination for fashionable clothing and accessories for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
+
     skills: [
       {
         name: "HTML",
@@ -93,48 +101,52 @@ let projects = [
     git: "https://github.com/astik0398/ambiguous-oven-8467",
     preview: "https://dressify-shopping.netlify.app/",
   },
-  {
-    title: "project-1",
-    img: sastasafar,
-    description: "des-1",
-    skills: [
-      {
-        name: "HTML",
-        icon: <FaHtml5 />,
-      },
-      {
-        name: "CSS",
-        icon: <FaCss3Alt />,
-      },
-      {
-        name: "JS",
-        icon: <FaJsSquare />,
-      },
-    ],
-    git: "https://github.com/astik0398/ambiguous-oven-8467",
-    preview: "https://dressify-shopping.netlify.app/",
-  },
-  {
-    title: "project-2",
-    img: oddgrass,
-    description: "des-2",
-    skills: [
-      {
-        name: "HTML",
-        icon: <FaHtml5 />,
-      },
-      {
-        name: "CSS",
-        icon: <FaCss3Alt />,
-      },
-      {
-        name: "JS",
-        icon: <FaJsSquare />,
-      },
-    ],
-    git: "https://github.com/astik0398/ambiguous-oven-8467",
-    preview: "https://dressify-shopping.netlify.app/",
-  },
+  // {
+  //   title: "project-1",
+  //   img1: abc,
+  //   img2: abc2,
+  //   description: "Dressify is one-stop destination for fashionable clothing and accessories for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
+
+  //   skills: [
+  //     {
+  //       name: "HTML",
+  //       icon: <FaHtml5 />,
+  //     },
+  //     {
+  //       name: "CSS",
+  //       icon: <FaCss3Alt />,
+  //     },
+  //     {
+  //       name: "JS",
+  //       icon: <FaJsSquare />,
+  //     },
+  //   ],
+  //   git: "https://github.com/astik0398/ambiguous-oven-8467",
+  //   preview: "https://dressify-shopping.netlify.app/",
+  // },
+  // {
+  //   title: "project-2",
+  //   img1: abc,
+  //   img2: abc2,
+  //   description: "Dressify is one-stop destination for fashionable clothing and accessories for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
+
+  //   skills: [
+  //     {
+  //       name: "HTML",
+  //       icon: <FaHtml5 />,
+  //     },
+  //     {
+  //       name: "CSS",
+  //       icon: <FaCss3Alt />,
+  //     },
+  //     {
+  //       name: "JS",
+  //       icon: <FaJsSquare />,
+  //     },
+  //   ],
+  //   git: "https://github.com/astik0398/ambiguous-oven-8467",
+  //   preview: "https://dressify-shopping.netlify.app/",
+  // },
 ];
 
 function Projects() {
@@ -145,7 +157,10 @@ function Projects() {
         {projects.map((el) => (
           <div className="project-card">
             <div className="pro-img">
-              <img src={el.img} alt="" />
+              <img src={el.img1} alt="" />
+            </div>
+            <div className="pro-img1">
+              <img src={el.img2} alt="" />
             </div>
 
             <div className="pro-Info">
