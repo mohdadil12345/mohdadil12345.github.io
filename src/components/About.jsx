@@ -4,6 +4,9 @@ import img1 from "../assests/Saly-16.png";
 import img2 from "../assests/Saly-10.png";
 
 function About() {
+
+
+
   return (
     <div id="about" className="about section">
 
@@ -22,6 +25,4 @@ function About() {
 
 export default About;
 
-// The following must be present within elements with the respective IDs:
-// Name : id="user-detail-name"
-// Formal introduction : id="user-detail-intro"
+

@@ -26,12 +26,17 @@ html {
   color:white;
   font-weight: 600;
 }
+.navbar a:hover{
+  color:#ea580c;
+  font-size: 20px;
+}
 .navbar h1 {
   color:white;
   font-weight: 600;
   margin: 0 20px;
   font-family: cursive;
 }
+
 .links {
   display: flex;
   align-items: center;
