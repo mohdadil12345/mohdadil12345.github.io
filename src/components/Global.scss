@@ -7,9 +7,10 @@ html {
   scroll-behavior: smooth;
 }
 .navbar {
-  background-color: rgb(222, 213, 213);
-  background: rgb(0, 200, 255);
-  background: white;
+  background-color: #5079cf;
+ 
+  // background: rgb(0, 200, 255);
+  // background: white;
   z-index: 9999;
 
   height: 60px;
@@ -20,17 +21,23 @@ html {
   width: 100%;
   top: 0;
   left: 0;
-  border-bottom: 3px solid rgb(42, 42, 42);
 }
 .navbar a {
-  color: rgb(31, 30, 30);
+  color:white;
   font-weight: 600;
+}
+.navbar h1 {
+  color:white;
+  font-weight: 600;
+  margin: 0 20px;
+  font-family: cursive;
 }
 .links {
   display: flex;
   align-items: center;
   gap: 30px;
   margin: auto;
+  font-size: 20px;
 }
 
 .home-img {
@@ -44,10 +51,7 @@ html {
   /*  */
   padding-top: 60px;
 }
-#home {
-  height: 100vh;
-  // background: linear-gradient(270deg, rgb(0, 200, 255) 50%, white 50%);
-}
+
 
 .react-img {
   width: 400px;
@@ -56,20 +60,33 @@ html {
 // about
 
 #about {
-  background-image: linear-gradient(-45deg, blue, skyblue);
+  // #1c1917
+  // #000000
+  // background-image: linear-gradient(-45deg, blue, skyblue);
+  // background-image: linear-gradient(-45deg, rgb(26, 26, 27), rgb(81, 81, 81));
   background-size: 200%;
-  background-image: linear-gradient(-45deg, rgb(26, 26, 27), rgb(81, 81, 81));
-  text-align: center;
+
+  background-color: #000000;
+  // text-align: center;
   padding: 30px 0px;
   color: white;
   .about_img {
     width: 400px;
     margin-bottom: 30px;
   }
-
+  .about_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    padding: 10px ;
+  }
+h1{
+  color:#ea580c;
+  text-align: center;
+}
   p {
     width: 400px;
-    margin: auto;
     color: white;
     font-family: Raleway, sans-serif;
     font-size: 15px;
@@ -123,6 +140,7 @@ html {
 }
 
 #projects {
+  // #1c1917
   padding: 30px;
 
   .all_projects {
@@ -249,14 +267,18 @@ html {
 }
 
 #home {
-  background-color: rgb(239, 78, 9);
+  // background-color: rgb(239, 78, 9);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   font-size: 30px;
+  height: 100vh;
+  background: linear-gradient(6deg, #5079cf 23%, transparent 24%);
 
   .home-img{
-    border-radius: 8px;
+    background: #5079cf;
+    border-radius: 50%;
+    border: 2px solid #5079cf;
   }
   
 
@@ -265,21 +287,29 @@ html {
     margin-top: 30px;
     border-radius: 8px;
     border: none;
+    background-color: #031e58;
+    color: white;
 
   }
   button:hover{
 
-    background-color: tomato;
+    background-color:#ea580c;
     cursor: pointer;
     color: white;
     font-size: 14px;
 
   }
+  .my-info {
+    background-color: white;
+    // background-image: linear-gradient(-45deg, rgb(252, 252, 252), rgb(81, 81, 81));
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 8px;
+    h1, h2{
+  
+      color: #5079cf;
+    }
+  }
+  
  
-}
-.my-info {
-  background-image: linear-gradient(-45deg, rgb(252, 252, 252), rgb(81, 81, 81));
-  padding: 20px 30px;
-  text-align: center;
-  border-radius: 8px;
 }

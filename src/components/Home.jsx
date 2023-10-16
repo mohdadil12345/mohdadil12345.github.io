@@ -10,7 +10,7 @@ function Home() {
   
       <div className="my-info">
         <h2>Hey there! </h2>
-        <h2 id="user-detail-name">I am Mohd Adil</h2>
+        <h1 id="user-detail-name">I am Mohd Adil</h1>
         <a className="nav-link resume" href="">
           <button id="resume-button-2">Resume</button>
         </a>
