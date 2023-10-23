@@ -151,6 +151,9 @@ html {
   // #1c1917
   padding: 30px;
 
+  h1{
+    text-align: center;
+  }
 
   .all_projects {
     display: flex;
@@ -173,6 +176,7 @@ html {
         padding: 10px 17px;
         font-size: 16px;
         font-weight: 600;
+        cursor: pointer;
         border: none;
         margin: 5px;
         background-image: linear-gradient(
@@ -187,6 +191,8 @@ html {
           rgb(5, 5, 168),
           rgb(103, 177, 206)
         );
+        background-image: linear-gradient(-45deg, rgb(155 155 155), #ffffff);
+        color: #183282;
         // background-size: 200%;
         filter: drop-shadow(4px 4px 1px rgb(0, 29, 126));
       }
@@ -242,9 +248,13 @@ html {
       filter: drop-shadow(4px 4px 1px rgb(0, 29, 126));
 
       color: white;
+
+
+    background-image: linear-gradient(-45deg, rgb(155 155 155), #ffffff);
+    color: #183282;
       svg {
         font-size: 80px;
-        filter: drop-shadow(2px 4px 6px black);
+        // filter: drop-shadow(2px 4px 6px black);
       }
     }
   }
@@ -261,8 +271,9 @@ html {
 
 }
 #contact {
-  background-image: linear-gradient(-45deg, rgb(26, 26, 27), rgb(81, 81, 81));
-
+  // background-image: linear-gradient(-45deg, rgb(26, 26, 27), rgb(81, 81, 81));
+  background-image: linear-gradient(-45deg, rgb(5, 5, 168), skyblue);
+  background-size: 200%;
   .contact_details {
     display: flex;
     flex-direction: column;
@@ -326,7 +337,6 @@ html {
     h1,
     h2 {
       color: #5079cf;
-      filter: drop-shadow(2px 4px 3px black);
     }
   }
 }

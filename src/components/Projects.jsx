@@ -5,6 +5,8 @@ import abc2 from "../assests/abc2.png";
 import oddgrass from "../assests/odd grass.png";
 import dressify from "../assests/dressify.png";
 import oddgras from "../assests/oddgrass-2.png";
+import olx from "../assests/olx-2.png";
+import iph from "../assests/iPhone 13f.png";
 
 
 import { FaCss3Alt, FaJsSquare, FaHtml5 } from "react-icons/fa";
@@ -15,8 +17,8 @@ let projects = [
   {
     title: "Sasta safar",
     img1: abc,
-    img2: abc2,
-    description: "Sasta safar is the ecotourism website where the users can choose their destination where they want to travel and also can book their ticket to travel.",
+    img2: iph,
+    description: "Sasta Safar is an ecotourism website that empowers users to select their desired travel destinations and book their tickets. Whether users are planning a nature retreat or an adventurous expedition, Sasta Safar offers a user-friendly platform to explore various destinations and secure their travel tickets with ease",
     skills: [
       {
         name: "HTML",
@@ -60,7 +62,7 @@ let projects = [
     title: "Odd Grass",
     img1: oddgrass,
     img2: oddgras,
-    description: "This website is mainly working for explore the world.It provides facilities to book your destination, Hotels and Activities at one tap , Simple and user Friendly UI/UX.",  
+    description: "Gamy Part is a website designed to help users explore the world . It offers convenient features that allow users to book destinations, hotels, and activities with just a tap. The platform boasts a simple and user-friendly UI/UX, ensuring a seamless experience for travelers looking to plan their journeys.",  
     
     skills: [
       {
@@ -80,10 +82,10 @@ let projects = [
     preview: "https://resonant-meringue-f6cdea.netlify.app/index.html",
   },
   {
-    title: "project-2",
+    title: "Gamy-Part",
     img1: abc,
-    img2: abc2,
-    description: "Dressify is one-stop destination for fashionable clothing and accessories for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
+    img2: olx,
+    description: "Gamy Part is a website clone of OLX, where users can browse and select products they want to buy. Similar to OLX, Gamy Part allows users to choose from a variety of products available on the platform.",
 
     skills: [
       {
@@ -99,8 +101,8 @@ let projects = [
         icon: <FaJsSquare />,
       },
     ],
-    git: "https://github.com/astik0398/ambiguous-oven-8467",
-    preview: "https://dressify-shopping.netlify.app/",
+    git: "https://github.com/mohdadil12345/gamy-part-5391",
+    preview: "https://splendorous-arithmetic-9d81d2.netlify.app/",
   },
   // {
   //   title: "project-1",
