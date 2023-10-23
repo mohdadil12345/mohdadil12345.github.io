@@ -38,7 +38,7 @@ function Navbar() {
                  background: "none",
                  border: "none",
                  fontWeight: "bold",
-                 fontSize: "16px",
+                 fontSize: "20px",
                }}
                onClick={resumedown}
              >

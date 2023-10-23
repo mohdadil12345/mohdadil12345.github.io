@@ -26,9 +26,14 @@ html {
   color: white;
   font-weight: 600;
 }
+#resume-button-1{
+  color: white;
+}
 .navbar a:hover {
-  color: #ea580c;
+  background-color: #ea580c;
   font-size: 20px;
+  border-radius: 4px;
+  // padding: 1px;
 }
 .navbar h1 {
   color: white;

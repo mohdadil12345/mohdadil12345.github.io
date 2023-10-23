@@ -2,8 +2,9 @@ import React from "react";
 import sastasafar from "../assests/sastasafar.png";
 import abc from "../assests/abc.png";
 import abc2 from "../assests/abc2.png";
-import oddgrass from "../assests/oddgrass.jpeg";
-import dressify from "../assests/dressify.jpeg";
+import oddgrass from "../assests/odd grass.png";
+import dressify from "../assests/dressify.png";
+import oddgras from "../assests/oddgrass-2.png";
 
 
 import { FaCss3Alt, FaJsSquare, FaHtml5 } from "react-icons/fa";
@@ -15,7 +16,7 @@ let projects = [
     title: "Sasta safar",
     img1: abc,
     img2: abc2,
-    description: "Dressify is one-stop destination for fashionable clothing and accessories for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
+    description: "Sasta safar is the ecotourism website where the users can choose their destination where they want to travel and also can book their ticket to travel.",
     skills: [
       {
         name: "HTML",
@@ -35,9 +36,9 @@ let projects = [
   },
   {
     title: "Dressify",
-    img1: abc,
+    img1: dressify,
     img2: abc2,
-    description: "Dressify is one-stop destination for fashionable clothing and accessories for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
+    description: "Dressify is one-stop destination for fashionable clothing  for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
     skills: [
       {
         name: "HTML",
@@ -56,11 +57,11 @@ let projects = [
     preview: "https://dressify-shopping.netlify.app/",
   },
   {
-    title: "project-1",
-    img1: abc,
-    img2: abc2,
-    description: "Dressify is one-stop destination for fashionable clothing and accessories for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
-
+    title: "Odd Grass",
+    img1: oddgrass,
+    img2: oddgras,
+    description: "This website is mainly working for explore the world.It provides facilities to book your destination, Hotels and Activities at one tap , Simple and user Friendly UI/UX.",  
+    
     skills: [
       {
         name: "HTML",
@@ -75,8 +76,8 @@ let projects = [
         icon: <FaJsSquare />,
       },
     ],
-    git: "https://github.com/astik0398/ambiguous-oven-8467",
-    preview: "https://dressify-shopping.netlify.app/",
+    git: "https://github.com/harsh7739/odd-grass-4307",
+    preview: "https://resonant-meringue-f6cdea.netlify.app/index.html",
   },
   {
     title: "project-2",
