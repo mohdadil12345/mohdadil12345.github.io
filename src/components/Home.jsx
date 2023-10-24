@@ -18,6 +18,7 @@ function Home() {
 
   return (
     <div id="home">
+      {/* <img className="backk" src="https://moneer-portfolio.netlify.app/static/media/fogtree.950d4c4e05476e6c70bb.jpg" alt="" /> */}
 
   
       <div className="my-info">
@@ -29,7 +30,7 @@ function Home() {
           >
             <button
               id="resume-button-2"
-              style={{ border: "none", fontWeight: "bold", fontSize: "20px" }}
+              
               onClick={resumedown2}
             >
               Resume

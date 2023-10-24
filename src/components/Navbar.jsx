@@ -1,14 +1,25 @@
 import React, { useState } from "react";
 import AllRoutes from "./AllRoutes";
 import { Link } from "react-router-dom";
+import { MdMenu } from "react-icons/md";
+import { FaXmark } from "react-icons/fa6";
 
 function Navbar() {
   const [show, setshow] = useState(true);
   const [display, sedisplay] = useState(true)
+  const [currentPath, setCurrentPath] = useState(window.location.hash)
 
   const toggle = () => {
     setshow(!show);
     sedisplay(!display)
+  };
+
+  const goTo = (activeurl) => {
+    if (activeurl) {
+      setCurrentPath(activeurl)
+    }
+    setshow(true);
+    sedisplay(true)
   };
 
   const resumedown = () => {
@@ -23,28 +34,28 @@ function Navbar() {
       <div>
         <h1>ADIL</h1>
       </div>
-      <button class="menu-btn" onClick={toggle}>
-        {show ? "🎫" : "❌"}
+      <button className="menu-btn" onClick={toggle}>
+        {show ? <MdMenu/> : <FaXmark/>}
       </button>
 
       <div className="links" id={display ? "close" : "open"}>
-        <a className="nav-link home" href="#home">
+        <a onClick={()=>goTo('#home')} className={`nav-link home ${currentPath == "#home" ? "link-active" : ""}`} href="#home">
           Home
         </a>
-        <a className="nav-link about" href="#about">
+        <a onClick={()=>goTo('#about')} className={`nav-link about ${currentPath == "#about" ? "link-active" : ""}`} href="#about">
           About
         </a>
-        <a className="nav-link skills" href="#skills">
+        <a onClick={()=>goTo('#skills')} className={`nav-link skills ${currentPath == "#skills" ? "link-active" : ""}`} href="#skills">
           Skills
         </a>
-        <a className="nav-link projects" href="#projects">
+        <a onClick={()=>goTo('#projects')} className={`nav-link projects ${currentPath == "#projects" ? "link-active" : ""}`} href="#projects">
           Projects
         </a>
-        <a className="nav-link contact" href="#contact">
+        <a onClick={()=>goTo('#contact')} className={`nav-link contact ${currentPath == "#contact" ? "link-active" : ""}`} href="#contact">
           Contact
         </a>
         {/* <a  className='nav-link resume' id='resume-button-1' href="#resume">Resume</a> */}
-        <Link
+        <Link onClick={()=>goTo(false)} 
           className="nav-link resume"
           to="https://drive.google.com/uc?export=download&id=1UBgt4cfEWrtO6DkeT8boJlXNJqLDL3kG"
         >
