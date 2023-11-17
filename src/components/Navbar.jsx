@@ -61,12 +61,7 @@ function Navbar() {
         >
           <button
             id="resume-button-1"
-            //  style={{
-            //    background: "none",
-            //    border: "none",
-            //    fontWeight: "bold",
-            //    fontSize: "20px",
-            //  }}
+      
             onClick={resumedown}
           >
             <i style={{ marginRight: "5px" }} className="far fa-file-alt"></i>
