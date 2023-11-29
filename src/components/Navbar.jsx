@@ -24,9 +24,10 @@ function Navbar() {
 
   const resumedown = () => {
     window.open(
-      "https://drive.google.com/file/d/1UBgt4cfEWrtO6DkeT8boJlXNJqLDL3kG/view?usp=sharing",
+      "https://drive.google.com/file/d/1ReFqsWgVN0pAGI_713PuPcHFxWjyJQmX/view?usp=sharing",
       "_blank"
     )
+    // https://drive.google.com/file/d/1ReFqsWgVN0pAGI_713PuPcHFxWjyJQmX/view?usp=drive_link
   };
 
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import sastasafar from "../assests/sastasafar.png";
-import abc from "../assests/abc.png";
+import abc from "../assests/olxx.png";
 import abc2 from "../assests/abc2.png";
 import oddgrass from "../assests/odd grass.png";
 import dressify from "../assests/dressify.png";
