@@ -1,11 +1,12 @@
 import React from "react";
 import sastasafar from "../assests/sastasafar.png";
-import abc from "../assests/olxx.png";
+import abc from "../assests/abc.png";
 import abc2 from "../assests/abc2.png";
 import oddgrass from "../assests/odd grass.png";
 import dressify from "../assests/dressify.png";
 import oddgras from "../assests/oddgrass-2.png";
 import olx from "../assests/olx-2.png";
+import olxx from "../assests/olxx.png";
 import iph from "../assests/iPhone 13f.png";
 
 
@@ -83,7 +84,7 @@ let projects = [
   },
   {
     title: "Gamy-Part",
-    img1: abc,
+    img1: olxx,
     img2: olx,
     description: "Gamy Part is a website clone of OLX, where users can browse and select products they want to buy. Similar to OLX, Gamy Part allows users to choose from a variety of products available on the platform.",
 
