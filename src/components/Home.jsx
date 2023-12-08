@@ -30,7 +30,7 @@ function Home() {
             
           >
             <button
-              id="resume-link-2"
+              id="resume-button-2"
               
               onClick={resumedown2}
             >
