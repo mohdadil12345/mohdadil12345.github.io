@@ -61,7 +61,7 @@ function Navbar() {
           to="https://drive.google.com/uc?export=download&id=1UBgt4cfEWrtO6DkeT8boJlXNJqLDL3kG"
         >
           <button
-            id="resume-button-1" force = {true}
+            id="resume-link-1" 
       
             onClick={resumedown}
           >
