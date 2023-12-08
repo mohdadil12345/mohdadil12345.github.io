@@ -56,8 +56,8 @@ function Navbar() {
           Contact
         </a>
         {/* <a  className='nav-link resume' id='resume-button-1' href="#resume">Resume</a> */}
-        <Link onClick={()=>goTo(false)} 
-          className="nav-link resume"
+        <Link className="nav-link resume"  onClick={()=>goTo(false)} 
+          
           to="https://drive.google.com/uc?export=download&id=1UBgt4cfEWrtO6DkeT8boJlXNJqLDL3kG"
         >
           <button
