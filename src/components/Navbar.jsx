@@ -27,7 +27,6 @@ function Navbar() {
       "https://drive.google.com/file/d/1ReFqsWgVN0pAGI_713PuPcHFxWjyJQmX/view?usp=sharing",
       "_blank"
     )
-    // https://drive.google.com/file/d/1ReFqsWgVN0pAGI_713PuPcHFxWjyJQmX/view?usp=drive_link
   };
 
   return (
@@ -55,7 +54,6 @@ function Navbar() {
         <a onClick={()=>goTo('#contact')} className={`nav-link contact ${currentPath == "#contact" ? "link-active" : ""}`} href="#contact">
           Contact
         </a>
-        {/* <a  className='nav-link resume' id='resume-button-1' href="#resume">Resume</a> */}
         <Link className="nav-link resume"  onClick={()=>goTo(false)} 
           
           to="https://drive.google.com/uc?export=download&id=1UBgt4cfEWrtO6DkeT8boJlXNJqLDL3kG"
