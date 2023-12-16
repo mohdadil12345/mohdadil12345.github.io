@@ -1,8 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.2d75f16e.css",
-    "main.js": "/static/js/main.7c507cfa.js",
+    "main.js": "/static/js/main.9723d99d.js",
     "static/js/787.dc8e9947.chunk.js": "/static/js/787.dc8e9947.chunk.js",
+    "static/media/homechef-1.png": "/static/media/homechef-1.9d9005ab4bb63b1c215f.png",
+    "static/media/homechef-2.png": "/static/media/homechef-2.de1f254226eed194666f.png",
     "static/media/Saly-16.png": "/static/media/Saly-16.b5a2c08fa56f31d17526.png",
     "static/media/olxx.png": "/static/media/olxx.885763f03384165b8ce9.png",
     "static/media/Saly-10.png": "/static/media/Saly-10.2959dc6e0abcd78b006f.png",
@@ -18,11 +20,11 @@
     "static/media/my img.jpeg": "/static/media/my img.62a7cd2d6c887e3f408d.jpeg",
     "index.html": "/index.html",
     "main.2d75f16e.css.map": "/static/css/main.2d75f16e.css.map",
-    "main.7c507cfa.js.map": "/static/js/main.7c507cfa.js.map",
+    "main.9723d99d.js.map": "/static/js/main.9723d99d.js.map",
     "787.dc8e9947.chunk.js.map": "/static/js/787.dc8e9947.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d75f16e.css",
-    "static/js/main.7c507cfa.js"
+    "static/js/main.9723d99d.js"
   ]
 }
