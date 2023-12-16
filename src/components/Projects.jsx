@@ -8,9 +8,12 @@ import oddgras from "../assests/oddgrass-2.png";
 import olx from "../assests/olx-2.png";
 import olxx from "../assests/olxx.png";
 import iph from "../assests/iPhone 13f.png";
+import homechef from "../assests/homechef-1.png";
+import homechef2 from "../assests/homechef-2.png";
 
 
 import { FaCss3Alt, FaJsSquare, FaHtml5 } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaSass  } from "react-icons/fa6";
 // https://react-icons.github.io/react-icons/icons?name=fa
 
 let projects = [
@@ -33,9 +36,40 @@ let projects = [
         name: "JS",
         icon: <FaJsSquare />,
       },
+      {
+        name: "Sass",
+        icon: <FaSass />,
+      },
     ],
     git: "https://github.com/mymsa123/quixotic-snail-9802",
     preview: "https://glittery-elf-a56a10.netlify.app/",
+  },
+  
+  {
+    title: "Home chef",
+    img1: homechef,
+    img2: homechef2,
+    description: "A Home Chef website clone is a replica of the popular Home Chef service online. It lets users discover and choose recipes, customize meal plans, and receive pre-measured ingredients at their doorstep. Just like Home Chef, this platform aims to make cooking easy and enjoyable, offering a convenient solution for those who want home-cooked meals without the hassle of grocery shopping.",
+    skills: [
+      {
+        name: "HTML",
+        icon: <FaHtml5 />,
+      },
+      {
+        name: "CSS",
+        icon: <FaCss3Alt />,
+      },
+      {
+        name: "Reactjs",
+        icon: <FaReact />,
+      },
+      {
+        name: "Nodejs",
+        icon: <FaNodeJs />,
+      },
+    ],
+    git: "https://github.com/mohdadil12345/Home_Chef",
+    preview: "https://home-chef-neon.vercel.app/",
   },
   {
     title: "Dressify",
@@ -52,8 +86,12 @@ let projects = [
         icon: <FaCss3Alt />,
       },
       {
-        name: "JS",
-        icon: <FaJsSquare />,
+        name: "Reactjs",
+        icon: <FaReact />,
+      },
+      {
+        name: "Sass",
+        icon: <FaSass />,
       },
     ],
     git: "https://github.com/astik0398/ambiguous-oven-8467",
