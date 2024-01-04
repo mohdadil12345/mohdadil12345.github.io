@@ -36,10 +36,7 @@ let projects = [
         name: "JS",
         icon: <FaJsSquare />,
       },
-      {
-        name: "Sass",
-        icon: <FaSass />,
-      },
+     
     ],
     git: "https://github.com/mymsa123/quixotic-snail-9802",
     preview: "https://glittery-elf-a56a10.netlify.app/",
