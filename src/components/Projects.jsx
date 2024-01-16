@@ -134,7 +134,7 @@ let projects = [
       },
       {
         name: "JS",
-        icon: <FaJsSquare />,
+        icon: <FaJsSquare />,                                                                                                     
       },
     ],
     git: "https://github.com/mohdadil12345/gamy-part-5391",

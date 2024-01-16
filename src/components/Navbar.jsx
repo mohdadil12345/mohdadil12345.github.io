@@ -27,7 +27,8 @@ function Navbar() {
     window.open(
       // "https://drive.google.com/file/d/1ReFqsWgVN0pAGI_713PuPcHFxWjyJQmX/view?usp=sharing",
       // "_blank"
-      "https://drive.google.com/file/d/1MOjwRy3Jf7xX_UGYeSOhJzJOiCAZmTPE/view?usp=drive_link"
+      "https://drive.google.com/file/d/1W2lUx0ty6bVhrldi1DYSFVTylpIIRZb8/view?usp=sharing"
+    
     )
   };
 

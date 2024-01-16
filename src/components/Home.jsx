@@ -8,7 +8,8 @@ function Home() {
 
   const resumedown2 = () => {
     window.open(
-      "https://drive.google.com/file/d/1MOjwRy3Jf7xX_UGYeSOhJzJOiCAZmTPE/view?usp=drive_link"
+      // "https://drive.google.com/file/d/1MOjwRy3Jf7xX_UGYeSOhJzJOiCAZmTPE/view?usp=drive_link"
+      "https://drive.google.com/file/d/1W2lUx0ty6bVhrldi1DYSFVTylpIIRZb8/view?usp=sharing"
       
     );
   };
@@ -24,6 +25,7 @@ function Home() {
         <Link
             className="nav-link resume"
             to="https://drive.google.com/uc?export=download&id=1UBgt4cfEWrtO6DkeT8boJlXNJqLDL3kG"
+            // to="https://drive.google.com/file/d/1W2lUx0ty6bVhrldi1DYSFVTylpIIRZb8/view?usp=sharing"
             
           >
             <button
