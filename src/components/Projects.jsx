@@ -138,7 +138,7 @@ let projects = [
       },
     ],
     git: "https://github.com/mohdadil12345/gamy-part-5391",
-    preview: "https://splendorous-arithmetic-9d81d2.netlify.app/",
+    preview: "https://darling-souffle-a3c765.netlify.app/",
   },
   // {
   //   title: "project-1",
