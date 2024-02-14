@@ -25,11 +25,10 @@ function Navbar() {
   const resumedown = () => {
     
     window.open(
-      // "https://drive.google.com/file/d/1ReFqsWgVN0pAGI_713PuPcHFxWjyJQmX/view?usp=sharing",
-      // "_blank"
-      "https://drive.google.com/file/d/1W2lUx0ty6bVhrldi1DYSFVTylpIIRZb8/view?usp=sharing"
-    
-    )
+      "https://drive.google.com/file/d/1W2lUx0ty6bVhrldi1DYSFVTylpIIRZb8/view?usp=sharing",
+      "_blank"
+      
+    );
   };
 
   return (
@@ -59,7 +58,8 @@ function Navbar() {
         </a>
         <Link className="nav-link resume"  onClick={()=>goTo(false)} 
           
-          to="https://drive.google.com/uc?export=download&id=1UBgt4cfEWrtO6DkeT8boJlXNJqLDL3kG"
+          // to="https://drive.google.com/uc?export=download&id=1UBgt4cfEWrtO6DkeT8boJlXNJqLDL3kG"
+          to="https://drive.google.com/uc?export=download&id=1W2lUx0ty6bVhrldi1DYSFVTylpIIRZb8"
         >
           <button
             id="resume-button-1" 
