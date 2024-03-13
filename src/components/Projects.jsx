@@ -115,7 +115,7 @@ let projects = [
       },
     ],
     git: "https://github.com/harsh7739/odd-grass-4307",
-    preview: "https://darling-souffle-a3c765.netlify.app/",
+    preview: "https://resonant-meringue-f6cdea.netlify.app/",
   },
   {
     title: "Olx-Clone",
