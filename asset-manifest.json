@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.34e397aa.css",
-    "main.js": "/static/js/main.490af7a0.js",
+    "main.css": "/static/css/main.fd8f3ee5.css",
+    "main.js": "/static/js/main.307c4024.js",
     "static/js/787.dc8e9947.chunk.js": "/static/js/787.dc8e9947.chunk.js",
     "static/media/homechef-1.png": "/static/media/homechef-1.9d9005ab4bb63b1c215f.png",
     "static/media/homechef-2.png": "/static/media/homechef-2.de1f254226eed194666f.png",
@@ -9,6 +9,8 @@
     "static/media/olxx.png": "/static/media/olxx.885763f03384165b8ce9.png",
     "static/media/Saly-10.png": "/static/media/Saly-10.2959dc6e0abcd78b006f.png",
     "static/media/iPhone 13f.png": "/static/media/iPhone 13f.79517322ada9a45cbff1.png",
+    "static/media/todo-1.png": "/static/media/todo-1.4b2661d2e85c149b690a.png",
+    "static/media/todo-2.png": "/static/media/todo-2.527cd699690e9d1d33dd.png",
     "static/media/grasmbile.png": "/static/media/grasmbile.d9eebf4971f868b69ea2.png",
     "static/media/odd grass.png": "/static/media/odd grass.98622dcb7b12bdc3008a.png",
     "static/media/sastasafar.png": "/static/media/sastasafar.58916667fa1043759b17.png",
@@ -19,12 +21,12 @@
     "static/media/olx-2.png": "/static/media/olx-2.c5c9c3a6020fe797a139.png",
     "static/media/my img.jpeg": "/static/media/my img.62a7cd2d6c887e3f408d.jpeg",
     "index.html": "/index.html",
-    "main.34e397aa.css.map": "/static/css/main.34e397aa.css.map",
-    "main.490af7a0.js.map": "/static/js/main.490af7a0.js.map",
+    "main.fd8f3ee5.css.map": "/static/css/main.fd8f3ee5.css.map",
+    "main.307c4024.js.map": "/static/js/main.307c4024.js.map",
     "787.dc8e9947.chunk.js.map": "/static/js/787.dc8e9947.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34e397aa.css",
-    "static/js/main.490af7a0.js"
+    "static/css/main.fd8f3ee5.css",
+    "static/js/main.307c4024.js"
   ]
 }
