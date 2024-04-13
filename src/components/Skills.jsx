@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCss3Alt, FaJsSquare, FaHtml5, FaSass, FaReact, FaBootstrap, FaNodeJs   } from "react-icons/fa";
+import { FaCss3Alt, FaJsSquare,FaAngular,FaFigma, FaHtml5, FaSass, FaReact, FaBootstrap, FaNodeJs   } from "react-icons/fa";
 {/* <FaHtml5 style={{ fontSize: "100px" }} />
 <FaJsSquare style={{ fontSize: "100px" }} />
 <FaCss3Alt style={{ fontSize: "100px" }} /> */}
@@ -21,7 +21,16 @@ const skills = [
     icon : <FaReact />
   },
   {
+    name: "REDUX",
+    icon : <FaReact />
+  },
+
+  {
     name: "NODE.JS",
+    icon : <FaNodeJs />
+  },
+  {
+    name: "Mongodb",
     icon : <FaNodeJs />
   },
   {
@@ -40,7 +49,21 @@ const skills = [
     name: "SASS",
     icon : <FaSass />
   },
+  {
+    name: "FIGMA",
+    icon :<FaFigma />
+  },
+
  
+  {
+    name: "TYPESCRIPT",
+    icon : <FaSass />
+  },
+  {
+    name: "ANGULAR",
+    icon : <FaAngular />
+  },
+
 ];
 
 

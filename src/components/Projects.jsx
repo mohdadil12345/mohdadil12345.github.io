@@ -10,10 +10,12 @@ import olxx from "../assests/olxx.png";
 import iph from "../assests/iPhone 13f.png";
 import homechef from "../assests/homechef-1.png";
 import homechef2 from "../assests/homechef-2.png";
+import todo1 from "../assests/todo-1.png";
+import todo2 from "../assests/todo-2.png";
 
 
 import { FaCss3Alt, FaJsSquare, FaHtml5 } from "react-icons/fa";
-import { FaReact, FaNodeJs, FaSass  } from "react-icons/fa6";
+import { FaReact, FaNodeJs, FaSass, FaAngular   } from "react-icons/fa6";
 // https://react-icons.github.io/react-icons/icons?name=fa
 
 let projects = [
@@ -140,52 +142,38 @@ let projects = [
     git: "https://github.com/mohdadil12345/gamy-part-5391",
     preview: "https://darling-souffle-a3c765.netlify.app/",
   },
-  // {
-  //   title: "project-1",
-  //   img1: abc,
-  //   img2: abc2,
-  //   description: "Dressify is one-stop destination for fashionable clothing and accessories for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
+  {
+    title: "Todo-app",
+    img1: todo1,
+    img2: todo2,
+    description: "Create a user-friendly todo-app that efficiently organizes tasks, allows users to add todos and perform crud operation in online as well as offline mode.",
 
-  //   skills: [
-  //     {
-  //       name: "HTML",
-  //       icon: <FaHtml5 />,
-  //     },
-  //     {
-  //       name: "CSS",
-  //       icon: <FaCss3Alt />,
-  //     },
-  //     {
-  //       name: "JS",
-  //       icon: <FaJsSquare />,
-  //     },
-  //   ],
-  //   git: "https://github.com/astik0398/ambiguous-oven-8467",
-  //   preview: "https://dressify-shopping.netlify.app/",
-  // },
-  // {
-  //   title: "project-2",
-  //   img1: abc,
-  //   img2: abc2,
-  //   description: "Dressify is one-stop destination for fashionable clothing and accessories for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
+    skills: [
+      {
+        name: "HTML",
+        icon: <FaHtml5 />,
+      },
+      {
+        name: "SASS",
+        icon: <FaSass />,
+      },
+      {
+        name: "JS",
+        icon: <FaJsSquare />,
+      },
+      {
+        name: "Angular",
+        icon: <FaAngular />
+      },
+      {
+        name: "Typescript",
+        icon: <FaJsSquare />,
+      },
+    ],
+    git: "https://github.com/mohdadil12345/TODO_APP",
+    preview: "https://todo-application-pied-phi.vercel.app/todo",
+  },
 
-  //   skills: [
-  //     {
-  //       name: "HTML",
-  //       icon: <FaHtml5 />,
-  //     },
-  //     {
-  //       name: "CSS",
-  //       icon: <FaCss3Alt />,
-  //     },
-  //     {
-  //       name: "JS",
-  //       icon: <FaJsSquare />,
-  //     },
-  //   ],
-  //   git: "https://github.com/astik0398/ambiguous-oven-8467",
-  //   preview: "https://dressify-shopping.netlify.app/",
-  // },
 ];
 
 function Projects() {
