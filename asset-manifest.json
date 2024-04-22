@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fd8f3ee5.css",
-    "main.js": "/static/js/main.307c4024.js",
+    "main.js": "/static/js/main.22b5a763.js",
     "static/js/787.dc8e9947.chunk.js": "/static/js/787.dc8e9947.chunk.js",
     "static/media/homechef-1.png": "/static/media/homechef-1.9d9005ab4bb63b1c215f.png",
     "static/media/homechef-2.png": "/static/media/homechef-2.de1f254226eed194666f.png",
@@ -22,11 +22,11 @@
     "static/media/my img.jpeg": "/static/media/my img.62a7cd2d6c887e3f408d.jpeg",
     "index.html": "/index.html",
     "main.fd8f3ee5.css.map": "/static/css/main.fd8f3ee5.css.map",
-    "main.307c4024.js.map": "/static/js/main.307c4024.js.map",
+    "main.22b5a763.js.map": "/static/js/main.22b5a763.js.map",
     "787.dc8e9947.chunk.js.map": "/static/js/787.dc8e9947.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fd8f3ee5.css",
-    "static/js/main.307c4024.js"
+    "static/js/main.22b5a763.js"
   ]
 }
