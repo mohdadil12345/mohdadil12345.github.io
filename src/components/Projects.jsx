@@ -94,7 +94,7 @@ let projects = [
       },
     ],
     git: "https://github.com/astik0398/ambiguous-oven-8467",
-    preview: "https://dressify-shopping.netlify.app/",
+    preview: "https://dressify-eight.vercel.app/",
   },
   {
     title: "Ecotourism",
