@@ -2,6 +2,7 @@ import React from "react";
 import myimg from "../assests/my img.jpeg";
 import myimg1 from "../assests/me.png";
 import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 
 function Home() {
   const resumedown2 = () => {
@@ -12,66 +13,98 @@ function Home() {
   };
 
   return (
-    <section id="home">
-      <div className="my-info">
-        <h2>Hey there! 👋</h2>
-        <h1 id="user-detail-name">I'm Mohd Adil</h1>
-        <p style={{ 
-          fontSize: '1.2rem', 
-          color: 'var(--text-secondary)', 
-          marginBottom: 'var(--space-lg)',
-          maxWidth: '500px',
-          lineHeight: 1.6
-        }}>
-          A passionate <strong style={{ color: 'var(--accent-primary)' }}>Full Stack Developer</strong> with 1+ year of experience crafting modern web applications. I specialize in React, Node.js, and creating seamless user experiences.
-        </p>
-        
-        <div style={{ display: 'flex', gap: 'var(--space-md)', flexWrap: 'wrap' }}>
-          <Link
-            className="nav-link resume"
-            to="https://drive.google.com/uc?export=download&id=1W2lUx0ty6bVhrldi1DYSFVTylpIIRZb8"
-          >
-            <button
-              id="resume-button-2"
-              onClick={resumedown2}
-            >
-              Download Resume
-            </button>
-          </Link>
+    <section id="home" className="hero-section">
+      <div className="hero-content">
+        <div className="hero-text">
+          <div className="hero-greeting">
+            <span className="wave">👋</span>
+            <span>Hello, I'm</span>
+          </div>
+          <h1 id="user-detail-name" className="hero-name">
+            Mohd Adil
+          </h1>
+          <h2 className="hero-title">
+            Full Stack Developer
+          </h2>
+          <p className="hero-description">
+            I build exceptional digital experiences that live on the web. 
+            Passionate about creating seamless user interfaces and robust backend systems.
+          </p>
           
-          <button
-            onClick={() => {
-              document.getElementById('projects').scrollIntoView({ 
-                behavior: 'smooth' 
-              });
-            }}
-            style={{
-              background: 'transparent',
-              color: 'var(--text-primary)',
-              border: '2px solid var(--accent-primary)',
-              padding: 'var(--space-md) var(--space-2xl)',
-              borderRadius: 'var(--radius-lg)',
-              fontSize: '1.1rem',
-              fontWeight: '600',
-              cursor: 'pointer',
-              transition: 'all var(--transition-normal)',
-            }}
-            onMouseEnter={(e) => {
-              e.target.style.background = 'var(--accent-primary)';
-              e.target.style.transform = 'translateY(-2px)';
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.background = 'transparent';
-              e.target.style.transform = 'translateY(0)';
-            }}
-          >
-            View Projects
-          </button>
+          <div className="hero-stats">
+            <div className="stat-item">
+              <span className="stat-number">1+</span>
+              <span className="stat-label">Year Experience</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">10+</span>
+              <span className="stat-label">Projects Done</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">5+</span>
+              <span className="stat-label">Happy Clients</span>
+            </div>
+          </div>
+          
+          <div className="hero-buttons">
+            <Link
+              className="nav-link resume"
+              to="https://drive.google.com/uc?export=download&id=1W2lUx0ty6bVhrldi1DYSFVTylpIIRZb8"
+            >
+              <button
+                id="resume-button-2"
+                className="btn btn-primary"
+                onClick={resumedown2}
+              >
+                Download CV
+              </button>
+            </Link>
+            
+            <button
+              className="btn btn-secondary"
+              onClick={() => {
+                document.getElementById('contact').scrollIntoView({ 
+                  behavior: 'smooth' 
+                });
+              }}
+            >
+              Get In Touch
+            </button>
+          </div>
+          
+          <div className="hero-social">
+            <a href="https://github.com/mohdadil12345" target="_blank" rel="noopener noreferrer">
+              <FaGithub />
+            </a>
+            <a href="https://linkedin.com/in/mohdadil" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin />
+            </a>
+            <a href="https://twitter.com/mohdadil" target="_blank" rel="noopener noreferrer">
+              <FaTwitter />
+            </a>
+            <a href="mailto:mohdadil@example.com">
+              <FaEnvelope />
+            </a>
+          </div>
+        </div>
+        
+        <div className="hero-image">
+          <div className="image-container">
+            <img className="home-img" src={myimg1} alt="Mohd Adil - Full Stack Developer" />
+            <div className="image-backdrop"></div>
+          </div>
+          <div className="floating-card">
+            <div className="card-content">
+              <div className="status-dot"></div>
+              <span>Available for work</span>
+            </div>
+          </div>
         </div>
       </div>
       
-      <div>
-        <img className="home-img" src={myimg1} alt="Mohd Adil - Full Stack Developer" />
+      <div className="scroll-indicator">
+        <div className="scroll-arrow"></div>
+        <span>Scroll Down</span>
       </div>
     </section>
   );
