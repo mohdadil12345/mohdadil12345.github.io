@@ -13,225 +13,225 @@ import homechef2 from "../assests/homechef-2.png";
 import todo1 from "../assests/todo-1.png";
 import todo2 from "../assests/todo-2.png";
 
-
-import { FaCss3Alt, FaJsSquare, FaHtml5 } from "react-icons/fa";
-import { FaReact, FaNodeJs, FaSass, FaAngular   } from "react-icons/fa6";
-// https://react-icons.github.io/react-icons/icons?name=fa
+import { FaCss3Alt, FaJsSquare, FaHtml5, FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaSass, FaAngular } from "react-icons/fa6";
 
 let projects = [
-
   {
     title: "Sasta Safar",
     img1: abc,
     img2: iph,
-    description: "Sasta Safar is an ecotourism website that empowers users to select their desired travel destinations and book their tickets. Whether users are planning a nature retreat or an adventurous expedition, Sasta Safar offers a user-friendly platform to explore various destinations and secure their travel tickets with ease",
+    category: "Web Application",
+    description: "An ecotourism platform that empowers users to explore and book travel destinations. Features destination selection, ticket booking, and user-friendly interface for nature enthusiasts.",
     skills: [
-      {
-        name: "HTML",
-        icon: <FaHtml5 />,
-      },
-      {
-        name: "CSS",
-        icon: <FaCss3Alt />,
-      },
-      {
-        name: "JS",
-        icon: <FaJsSquare />,
-      },
-     
+      { name: "HTML", icon: <FaHtml5 /> },
+      { name: "CSS", icon: <FaCss3Alt /> },
+      { name: "JavaScript", icon: <FaJsSquare /> },
     ],
     git: "https://github.com/mymsa123/quixotic-snail-9802",
     preview: "https://glittery-elf-a56a10.netlify.app/",
+    featured: true
   },
-  
   {
-    title: "Home chef",
+    title: "Home Chef",
     img1: homechef,
     img2: homechef2,
-    description: "A Home Chef website clone is a replica of the popular Home Chef service online. It lets users discover and choose recipes, customize meal plans, and receive pre-measured ingredients at their doorstep. Just like Home Chef, this platform aims to make cooking easy and enjoyable, offering a convenient solution for those who want home-cooked meals without the hassle of grocery shopping.",
+    category: "Full Stack",
+    description: "A comprehensive food delivery platform clone with recipe discovery, meal planning, and doorstep delivery. Built with modern web technologies for seamless user experience.",
     skills: [
-      {
-        name: "HTML",
-        icon: <FaHtml5 />,
-      },
-      {
-        name: "CSS",
-        icon: <FaCss3Alt />,
-      },
-      {
-        name: "Reactjs",
-        icon: <FaReact />,
-      },
-      {
-        name: "Nodejs",
-        icon: <FaNodeJs />,
-      },
+      { name: "HTML", icon: <FaHtml5 /> },
+      { name: "CSS", icon: <FaCss3Alt /> },
+      { name: "React", icon: <FaReact /> },
+      { name: "Node.js", icon: <FaNodeJs /> },
     ],
     git: "https://github.com/mohdadil12345/Home_Chef",
     preview: "https://home-chef-neon.vercel.app/",
+    featured: true
   },
   {
     title: "Dressify",
     img1: dressify,
     img2: abc2,
-    description: "Dressify is one-stop destination for fashionable clothing  for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
+    category: "E-commerce",
+    description: "Modern fashion e-commerce platform offering clothing for all ages. Features product browsing, cart management, and responsive design for optimal shopping experience.",
     skills: [
-      {
-        name: "HTML",
-        icon: <FaHtml5 />,
-      },
-      {
-        name: "CSS",
-        icon: <FaCss3Alt />,
-      },
-      {
-        name: "Reactjs",
-        icon: <FaReact />,
-      },
-      {
-        name: "Sass",
-        icon: <FaSass />,
-      },
+      { name: "HTML", icon: <FaHtml5 /> },
+      { name: "CSS", icon: <FaCss3Alt /> },
+      { name: "React", icon: <FaReact /> },
+      { name: "SASS", icon: <FaSass /> },
     ],
     git: "https://github.com/astik0398/ambiguous-oven-8467",
     preview: "https://dressify-eight.vercel.app/",
+    featured: false
   },
   {
-    title: "Ecotourism",
+    title: "Ecotourism Platform",
     img1: oddgrass,
     img2: oddgras,
-    description: "Gamy Part is a website designed to help users explore the world . It offers convenient features that allow users to book destinations, hotels, and activities with just a tap. The platform boasts a simple and user-friendly UI/UX, ensuring a seamless experience for travelers looking to plan their journeys.",  
-    
+    category: "Web Application",
+    description: "Travel booking platform with destination exploration, hotel booking, and activity planning. Simple UI/UX for seamless travel experience.",
     skills: [
-      {
-        name: "HTML",
-        icon: <FaHtml5 />,
-      },
-      {
-        name: "CSS",
-        icon: <FaCss3Alt />,
-      },
-      {
-        name: "JS",
-        icon: <FaJsSquare />,
-      },
+      { name: "HTML", icon: <FaHtml5 /> },
+      { name: "CSS", icon: <FaCss3Alt /> },
+      { name: "JavaScript", icon: <FaJsSquare /> },
     ],
     git: "https://github.com/harsh7739/odd-grass-4307",
     preview: "https://resonant-meringue-f6cdea.netlify.app/",
+    featured: false
   },
   {
-    title: "Olx-Clone",
+    title: "OLX Clone",
     img1: olxx,
     img2: olx,
-    description: "Gamy Part is a website clone of OLX, where users can browse and select products they want to buy. Similar to OLX, Gamy Part allows users to choose from a variety of products available on the platform.",
-
+    category: "Web Application",
+    description: "Marketplace clone where users can browse and purchase products. Features product listing, search functionality, and user-friendly interface.",
     skills: [
-      {
-        name: "HTML",
-        icon: <FaHtml5 />,
-      },
-      {
-        name: "CSS",
-        icon: <FaCss3Alt />,
-      },
-      {
-        name: "JS",
-        icon: <FaJsSquare />,                                                                                                     
-      },
+      { name: "HTML", icon: <FaHtml5 /> },
+      { name: "CSS", icon: <FaCss3Alt /> },
+      { name: "JavaScript", icon: <FaJsSquare /> },
     ],
     git: "https://github.com/mohdadil12345/gamy-part-5391",
     preview: "https://darling-souffle-a3c765.netlify.app/",
+    featured: false
   },
   {
-    title: "Todo-app",
+    title: "Todo Application",
     img1: todo1,
     img2: todo2,
-    description: "Create a user-friendly todo-app that efficiently organizes tasks, allows users to add todos and perform crud operation in online as well as offline mode.",
-
+    category: "Web Application",
+    description: "Feature-rich todo application with CRUD operations, offline support, and modern Angular architecture. Built with TypeScript for type safety.",
     skills: [
-      {
-        name: "HTML",
-        icon: <FaHtml5 />,
-      },
-      {
-        name: "SASS",
-        icon: <FaSass />,
-      },
-      {
-        name: "JS",
-        icon: <FaJsSquare />,
-      },
-      {
-        name: "Angular",
-        icon: <FaAngular />
-      },
-      {
-        name: "Typescript",
-        icon: <FaJsSquare />,
-      },
+      { name: "HTML", icon: <FaHtml5 /> },
+      { name: "SASS", icon: <FaSass /> },
+      { name: "TypeScript", icon: <FaJsSquare /> },
+      { name: "Angular", icon: <FaAngular /> },
     ],
     git: "https://github.com/mohdadil12345/TODO_APP",
     preview: "https://todo-application-pied-phi.vercel.app/todo",
+    featured: false
   },
-
 ];
 
 function Projects() {
-  return (
-    <div id="projects">
-      <h1>Projects </h1>
-      <div className="all_projects">
-        {projects.map((el) => (
-          <div className="project-card">
-            <div className="pro-img">
-              <img src={el.img1} alt="" />
-            </div>
-            <div className="pro-img1">
-              <img src={el.img2} alt="" />
-            </div>
+  const featuredProjects = projects.filter(project => project.featured);
+  const otherProjects = projects.filter(project => !project.featured);
 
-            <div className="pro-Info">
-              <h2 className="project-title">{el.title}</h2>
-              <p className="project-description">{el.description}</p>
-              <h2>Tech Stack</h2>
-              <div className="project-tech-stack">
-                {el.skills.map((skill) => (
-                  <div className="skills-card">
-                    {skill.icon}
-                    <p style={{ fontSize: "20px" }}>{skill.name}</p>
-                  </div>
-                ))}
+  return (
+    <section id="projects" className="projects-section">
+      <div className="container">
+        <div className="section-header">
+          <h2 className="section-title">Featured Projects</h2>
+          <p className="section-subtitle">
+            Here are some of my recent projects that showcase my skills and experience
+          </p>
+        </div>
+        
+        <div className="featured-projects">
+          {featuredProjects.map((project, index) => (
+            <div key={index} className="project-card featured">
+              <div className="project-images">
+                <div className="project-image main">
+                  <img src={project.img1} alt={project.title} />
+                </div>
+                <div className="project-image secondary">
+                  <img src={project.img2} alt={project.title} />
+                </div>
               </div>
-              <div className="pro-anchortag">
-                <a
-                  className="project-github-link"
-                  href={el.git}
-                  target="_blank"
-                >
-                  <button>Github Code</button>
-                </a>
-                <a
-                  className="project-deployed-link"
-                  target="_blank"
-                  href={el.preview}
-                >
-                  <button>Preview</button>
-                </a>
+              
+              <div className="project-content">
+                <div className="project-header">
+                  <span className="project-category">{project.category}</span>
+                  <h3 className="project-title">{project.title}</h3>
+                </div>
+                
+                <p className="project-description">{project.description}</p>
+                
+                <div className="project-tech-stack">
+                  <h4>Technologies Used</h4>
+                  <div className="tech-stack-grid">
+                    {project.skills.map((skill, skillIndex) => (
+                      <div key={skillIndex} className="skills-card">
+                        <div className="skills-card-img">{skill.icon}</div>
+                        <span className="skills-card-name">{skill.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                
+                <div className="project-links">
+                  <a
+                    className="project-github-link"
+                    href={project.git}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub />
+                    <span>View Code</span>
+                  </a>
+                  <a
+                    className="project-deployed-link"
+                    href={project.preview}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaExternalLinkAlt />
+                    <span>Live Demo</span>
+                  </a>
+                </div>
               </div>
             </div>
+          ))}
+        </div>
+        
+        <div className="other-projects">
+          <h3 className="subsection-title">Other Projects</h3>
+          <div className="projects-grid">
+            {otherProjects.map((project, index) => (
+              <div key={index} className="project-card compact">
+                <div className="project-image">
+                  <img src={project.img1} alt={project.title} />
+                  <div className="project-overlay">
+                    <div className="project-links">
+                      <a
+                        className="project-github-link"
+                        href={project.git}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaGithub />
+                      </a>
+                      <a
+                        className="project-deployed-link"
+                        href={project.preview}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaExternalLinkAlt />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="project-content">
+                  <span className="project-category">{project.category}</span>
+                  <h4 className="project-title">{project.title}</h4>
+                  <p className="project-description">{project.description}</p>
+                  
+                  <div className="project-tech-stack">
+                    {project.skills.map((skill, skillIndex) => (
+                      <span key={skillIndex} className="tech-tag">
+                        {skill.name}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
 export default Projects;
-
-// Each project card in the Projects section should have class="project-card" and the following:
-// Image of the project
-// Title : class="project-title"
-// Description : class="project-description"
-// Tech stack used : class="project-tech-stack"
-// Link to GitHub repository : class="project-github-link"
-// Deployed link or video link : class="project-deployed-link"
