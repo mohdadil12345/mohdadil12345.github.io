@@ -7,10 +7,11 @@ Successfully implemented a modern light/dark theme toggle for your React portfol
 
 ### 🎨 **Complete Theme System**
 - **Dark Theme (Default)**: Modern dark color scheme with professional aesthetics
-- **Light Theme**: Clean light mode with proper contrast and readability
+- **Light Theme**: **Elegant beige palette** with warm, sophisticated colors including terracotta, caramel, and coffee tones
 - **Smooth Transitions**: All color changes animated with CSS transitions
 - **Persistence**: Theme preference saved in localStorage
 - **System Preference Detection**: Automatically detects user's system preference on first visit
+- **Enhanced Gradients**: Beautiful gradient backgrounds and subtle radial overlays in light mode
 
 ### 🔧 **Technical Implementation**
 
@@ -50,15 +51,32 @@ Successfully implemented a modern light/dark theme toggle for your React portfol
 --accent-primary: #6366f1
 ```
 
-### Light Theme
+### Light Theme (Elegant Beige Palette)
 ```scss
---primary-bg: #ffffff
---secondary-bg: #f8fafc
---card-bg: #ffffff
---text-primary: #1e293b
---text-secondary: #475569
---accent-primary: #6366f1
+// Main Colors
+--primary-bg: #faf8f5 (warm cream)
+--secondary-bg: #f5f1eb (light beige)
+--card-bg: #fefcf9 (warm white)
+--text-primary: #2c1810 (rich coffee)
+--text-secondary: #5c4a3a (warm brown)
+--accent-primary: #c17b47 (elegant terracotta)
+
+// Extended Palette
+--beige-light: #f7f3ef (light beige)
+--beige-medium: #e8dfd6 (medium beige)
+--beige-dark: #d4c5b9 (dark beige)
+--coffee: #6b4e3d (deep coffee)
+--caramel: #b8956a (warm caramel)
+--terracotta: #c17b47 (elegant terracotta)
+--sage: #9db5a0 (subtle sage green)
 ```
+
+This palette creates a warm, sophisticated, and elegant appearance with:
+- **Warm undertones** throughout all colors
+- **High contrast** for excellent readability
+- **Harmonious color relationships** that feel natural and calming
+- **Subtle gradients** and radial overlays for depth
+- **Professional appearance** suitable for business portfolios
 
 ## Components Updated
 
