@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MdMenu, MdClose } from "react-icons/md";
+import ThemeToggle from "./ThemeToggle";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -97,6 +98,7 @@ function Navbar() {
         >
           Contact
         </a>
+        <ThemeToggle />
         <Link 
           className="nav-link resume"  
           onClick={() => goTo(false)} 
