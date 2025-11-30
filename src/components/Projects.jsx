@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import sastasafar from "../assests/sastasafar.png";
 import abc from "../assests/abc.png";
 import abc2 from "../assests/grasmbile.png";
@@ -13,16 +13,33 @@ import homechef2 from "../assests/homechef-2.png";
 import todo1 from "../assests/todo-1.png";
 import todo2 from "../assests/todo-2.png";
 
-import { FaCss3Alt, FaJsSquare, FaHtml5, FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import { FaReact, FaNodeJs, FaSass, FaAngular } from "react-icons/fa6";
+import { FaCss3Alt, FaJsSquare, FaHtml5, FaExternalLinkAlt, FaGithub, FaNodeJs, FaSass } from "react-icons/fa";
+import { FaReact, FaAngular } from "react-icons/fa6";
+import { SiTypescript } from "react-icons/si";
 
 let projects = [
+  {
+    title: "Home Chef",
+    img1: homechef,
+    img2: homechef2,
+    category: "Full Stack",
+    description: "A comprehensive food delivery platform with recipe discovery, meal planning, and seamless ordering. Built with MERN stack featuring real-time updates and intuitive UX.",
+    skills: [
+      { name: "React", icon: <FaReact /> },
+      { name: "Node.js", icon: <FaNodeJs /> },
+      { name: "CSS", icon: <FaCss3Alt /> },
+    ],
+    git: "https://github.com/mohdadil12345/Home_Chef",
+    preview: "https://home-chef-neon.vercel.app/",
+    featured: true,
+    highlights: ["Real-time Orders", "User Auth", "Payment Integration"]
+  },
   {
     title: "Sasta Safar",
     img1: abc,
     img2: iph,
     category: "Web Application",
-    description: "An ecotourism platform that empowers users to explore and book travel destinations. Features destination selection, ticket booking, and user-friendly interface for nature enthusiasts.",
+    description: "An ecotourism platform that empowers users to explore and book travel destinations. Features interactive maps, destination selection, and seamless booking flow.",
     skills: [
       { name: "HTML", icon: <FaHtml5 /> },
       { name: "CSS", icon: <FaCss3Alt /> },
@@ -30,46 +47,31 @@ let projects = [
     ],
     git: "https://github.com/mymsa123/quixotic-snail-9802",
     preview: "https://glittery-elf-a56a10.netlify.app/",
-    featured: true
-  },
-  {
-    title: "Home Chef",
-    img1: homechef,
-    img2: homechef2,
-    category: "Full Stack",
-    description: "A comprehensive food delivery platform clone with recipe discovery, meal planning, and doorstep delivery. Built with modern web technologies for seamless user experience.",
-    skills: [
-      { name: "HTML", icon: <FaHtml5 /> },
-      { name: "CSS", icon: <FaCss3Alt /> },
-      { name: "React", icon: <FaReact /> },
-      { name: "Node.js", icon: <FaNodeJs /> },
-    ],
-    git: "https://github.com/mohdadil12345/Home_Chef",
-    preview: "https://home-chef-neon.vercel.app/",
-    featured: true
+    featured: true,
+    highlights: ["Interactive UI", "Booking System", "Responsive Design"]
   },
   {
     title: "Dressify",
     img1: dressify,
     img2: abc2,
     category: "E-commerce",
-    description: "Modern fashion e-commerce platform offering clothing for all ages. Features product browsing, cart management, and responsive design for optimal shopping experience.",
+    description: "Modern fashion e-commerce platform with product catalog, cart management, and checkout flow. Responsive design optimized for mobile shopping.",
     skills: [
-      { name: "HTML", icon: <FaHtml5 /> },
-      { name: "CSS", icon: <FaCss3Alt /> },
       { name: "React", icon: <FaReact /> },
       { name: "SASS", icon: <FaSass /> },
+      { name: "CSS", icon: <FaCss3Alt /> },
     ],
     git: "https://github.com/astik0398/ambiguous-oven-8467",
     preview: "https://dressify-eight.vercel.app/",
-    featured: false
+    featured: false,
+    highlights: ["Product Catalog", "Cart System", "Filters"]
   },
   {
     title: "Ecotourism Platform",
     img1: oddgrass,
     img2: oddgras,
     category: "Web Application",
-    description: "Travel booking platform with destination exploration, hotel booking, and activity planning. Simple UI/UX for seamless travel experience.",
+    description: "Travel booking platform with destination exploration, hotel booking, and activity planning. Clean UI/UX for seamless travel experience.",
     skills: [
       { name: "HTML", icon: <FaHtml5 /> },
       { name: "CSS", icon: <FaCss3Alt /> },
@@ -77,14 +79,15 @@ let projects = [
     ],
     git: "https://github.com/harsh7739/odd-grass-4307",
     preview: "https://resonant-meringue-f6cdea.netlify.app/",
-    featured: false
+    featured: false,
+    highlights: ["Search & Filter", "Booking Flow", "Gallery"]
   },
   {
     title: "OLX Clone",
     img1: olxx,
     img2: olx,
     category: "Web Application",
-    description: "Marketplace clone where users can browse and purchase products. Features product listing, search functionality, and user-friendly interface.",
+    description: "Marketplace clone with product listing, category browsing, and user-friendly interface for buying and selling items.",
     skills: [
       { name: "HTML", icon: <FaHtml5 /> },
       { name: "CSS", icon: <FaCss3Alt /> },
@@ -92,43 +95,48 @@ let projects = [
     ],
     git: "https://github.com/mohdadil12345/gamy-part-5391",
     preview: "https://darling-souffle-a3c765.netlify.app/",
-    featured: false
+    featured: false,
+    highlights: ["Product Listings", "Categories", "Search"]
   },
   {
     title: "Todo Application",
     img1: todo1,
     img2: todo2,
     category: "Web Application",
-    description: "Feature-rich todo application with CRUD operations, offline support, and modern Angular architecture. Built with TypeScript for type safety.",
+    description: "Feature-rich todo application with CRUD operations, local storage persistence, and modern Angular architecture. Built with TypeScript for type safety.",
     skills: [
-      { name: "HTML", icon: <FaHtml5 /> },
-      { name: "SASS", icon: <FaSass /> },
-      { name: "TypeScript", icon: <FaJsSquare /> },
+      { name: "TypeScript", icon: <SiTypescript /> },
       { name: "Angular", icon: <FaAngular /> },
+      { name: "SASS", icon: <FaSass /> },
     ],
     git: "https://github.com/mohdadil12345/TODO_APP",
     preview: "https://todo-application-pied-phi.vercel.app/todo",
-    featured: false
+    featured: false,
+    highlights: ["CRUD Operations", "Local Storage", "TypeScript"]
   },
 ];
 
 function Projects() {
+  const [filter, setFilter] = useState("all");
   const featuredProjects = projects.filter(project => project.featured);
   const otherProjects = projects.filter(project => !project.featured);
+  
+  const categories = ["all", "Full Stack", "Web Application", "E-commerce"];
 
   return (
     <section id="projects" className="projects-section">
       <div className="container">
         <div className="section-header">
+          <span className="section-tag">My Work</span>
           <h2 className="section-title">Featured Projects</h2>
           <p className="section-subtitle">
-            Here are some of my recent projects that showcase my skills and experience
+            A collection of projects showcasing my skills and experience over 2+ years
           </p>
         </div>
         
         <div className="featured-projects">
           {featuredProjects.map((project, index) => (
-            <div key={index} className="project-card featured">
+            <div key={index} className="project-card featured" style={{ '--delay': `${index * 0.2}s` }}>
               <div className="project-images">
                 <div className="project-image main">
                   <img src={project.img1} alt={project.title} />
@@ -136,6 +144,7 @@ function Projects() {
                 <div className="project-image secondary">
                   <img src={project.img2} alt={project.title} />
                 </div>
+                <div className="project-image-overlay"></div>
               </div>
               
               <div className="project-content">
@@ -146,8 +155,16 @@ function Projects() {
                 
                 <p className="project-description">{project.description}</p>
                 
+                {project.highlights && (
+                  <div className="project-highlights">
+                    {project.highlights.map((highlight, idx) => (
+                      <span key={idx} className="highlight-tag">{highlight}</span>
+                    ))}
+                  </div>
+                )}
+                
                 <div className="project-tech-stack">
-                  <h4>Technologies Used</h4>
+                  <h4>Built With</h4>
                   <div className="tech-stack-grid">
                     {project.skills.map((skill, skillIndex) => (
                       <div key={skillIndex} className="skills-card">
@@ -166,7 +183,7 @@ function Projects() {
                     rel="noopener noreferrer"
                   >
                     <FaGithub />
-                    <span>View Code</span>
+                    <span>Source Code</span>
                   </a>
                   <a
                     className="project-deployed-link"
@@ -187,7 +204,7 @@ function Projects() {
           <h3 className="subsection-title">Other Projects</h3>
           <div className="projects-grid">
             {otherProjects.map((project, index) => (
-              <div key={index} className="project-card compact">
+              <div key={index} className="project-card compact" style={{ '--delay': `${index * 0.15}s` }}>
                 <div className="project-image">
                   <img src={project.img1} alt={project.title} />
                   <div className="project-overlay">
@@ -197,6 +214,7 @@ function Projects() {
                         href={project.git}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="View source code"
                       >
                         <FaGithub />
                       </a>
@@ -205,6 +223,7 @@ function Projects() {
                         href={project.preview}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="View live demo"
                       >
                         <FaExternalLinkAlt />
                       </a>
@@ -228,6 +247,19 @@ function Projects() {
               </div>
             ))}
           </div>
+        </div>
+        
+        <div className="projects-cta">
+          <p>Want to see more of my work?</p>
+          <a 
+            href="https://github.com/mohdadil12345" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn btn-outline"
+          >
+            <FaGithub />
+            <span>View All on GitHub</span>
+          </a>
         </div>
       </div>
     </section>

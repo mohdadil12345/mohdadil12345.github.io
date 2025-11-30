@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane, FaRocket } from "react-icons/fa";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -8,6 +8,7 @@ function Contact() {
     subject: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -16,19 +17,28 @@ function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
+    setIsSubmitting(true);
+    
+    // Simulate form submission
+    await new Promise(resolve => setTimeout(resolve, 1000));
     console.log('Form submitted:', formData);
+    
+    // Reset form
+    setFormData({ name: '', email: '', subject: '', message: '' });
+    setIsSubmitting(false);
   };
 
   return (
     <section id="contact" className="contact-section">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Get In Touch</h2>
+          <span className="section-tag">Get in Touch</span>
+          <h2 className="section-title">Let's Work Together</h2>
           <p className="section-subtitle">
-            I'm always open to discussing new opportunities, creative projects, or just having a chat about tech.
+            Have a project in mind or just want to chat? I'm always open to discussing 
+            new opportunities and creative collaborations.
           </p>
         </div>
         
@@ -63,23 +73,23 @@ function Contact() {
               <div className="contact-details">
                 <h3>Location</h3>
                 <p>India</p>
-                <span>Available for remote work</span>
+                <span>Open to remote & on-site opportunities</span>
               </div>
             </div>
             
             <div className="social-links">
-              <h3>Follow Me</h3>
+              <h3>Connect With Me</h3>
               <div className="social-icons">
-                <a href="https://github.com/mohdadil12345" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/mohdadil12345" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <FaGithub />
                 </a>
-                <a href="https://linkedin.com/in/mohdadil" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkedin.com/in/mohdadil" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <FaLinkedin />
                 </a>
-                <a href="https://twitter.com/mohdadil" target="_blank" rel="noopener noreferrer">
+                <a href="https://twitter.com/mohdadil" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                   <FaTwitter />
                 </a>
-                <a href="mailto:mohdadil@example.com">
+                <a href="mailto:mohdadil@example.com" aria-label="Email">
                   <FaEnvelope />
                 </a>
               </div>
@@ -87,7 +97,7 @@ function Contact() {
           </div>
           
           <div className="contact-form">
-            <h3>Send Message</h3>
+            <h3>Send Me a Message</h3>
             <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <input
@@ -133,25 +143,35 @@ function Contact() {
                 ></textarea>
               </div>
               
-              <button type="submit" className="btn btn-primary">
-                <FaPaperPlane />
-                <span>Send Message</span>
+              <button type="submit" className="btn btn-primary" disabled={isSubmitting}>
+                {isSubmitting ? (
+                  <>
+                    <span className="spinner"></span>
+                    <span>Sending...</span>
+                  </>
+                ) : (
+                  <>
+                    <FaPaperPlane />
+                    <span>Send Message</span>
+                  </>
+                )}
               </button>
             </form>
           </div>
         </div>
         
         <div className="contact-cta">
-          <h3>Let's Work Together</h3>
+          <h3>Ready to Start a Project?</h3>
           <p>
-            I'm always excited to work on new projects and collaborate with amazing people. 
-            Whether you have a project in mind or just want to chat about tech, feel free to reach out!
+            With 2+ years of experience in full-stack development, I'm ready to bring your 
+            ideas to life. Let's create something amazing together!
           </p>
           <button 
             className="btn btn-outline"
             onClick={() => window.open('https://drive.google.com/file/d/1W2lUx0ty6bVhrldi1DYSFVTylpIIRZb8/view?usp=sharing', '_blank')}
           >
-            Download My Resume
+            <FaRocket />
+            <span>Download My Resume</span>
           </button>
         </div>
       </div>

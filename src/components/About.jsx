@@ -1,35 +1,98 @@
 import React from "react";
-import img1 from "../assests/Saly-16.png";
 import img2 from "../assests/Saly-10.png";
-import { FaCode, FaLaptopCode, FaServer, FaMobile } from "react-icons/fa";
+import { FaLaptopCode, FaServer, FaMobile, FaGraduationCap, FaBriefcase, FaHeart } from "react-icons/fa";
+import { SiReact, SiNodedotjs, SiMongodb, SiExpress } from "react-icons/si";
 
 function About() {
+  const experiences = [
+    {
+      icon: <FaBriefcase />,
+      title: "2+ Years Experience",
+      description: "Building production-ready applications"
+    },
+    {
+      icon: <FaGraduationCap />,
+      title: "Continuous Learning",
+      description: "Always exploring new technologies"
+    },
+    {
+      icon: <FaHeart />,
+      title: "Passion Driven",
+      description: "Love for clean, efficient code"
+    }
+  ];
+
   return (
     <section id="about" className="about section">
       <div className="container">
         <div className="section-header">
+          <span className="section-tag">Get to Know Me</span>
           <h2 className="section-title">About Me</h2>
           <p className="section-subtitle">
-            Get to know more about who I am, what I do, and what I'm passionate about
+            Discover who I am, my journey, and what drives my passion for development
           </p>
         </div>
         
         <div className="about-content">
           <div className="about-image">
             <div className="image-wrapper">
+              <div className="image-background"></div>
               <img className="about_img" src={img2} alt="About Mohd Adil" />
-              <div className="image-overlay"></div>
+              <div className="image-dots"></div>
+              
+              <div className="experience-badge">
+                <span className="exp-number">2+</span>
+                <span className="exp-text">Years of<br/>Experience</span>
+              </div>
+            </div>
+            
+            <div className="quick-stats">
+              {experiences.map((exp, index) => (
+                <div key={index} className="quick-stat-item">
+                  <div className="stat-icon">{exp.icon}</div>
+                  <div className="stat-info">
+                    <h4>{exp.title}</h4>
+                    <p>{exp.description}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
           
           <div className="about-text">
             <div className="about-intro">
-              <h3>I'm a passionate Full-Stack Developer</h3>
+              <h3>
+                A Passionate Full-Stack Developer 
+                <span className="highlight">Based in India</span>
+              </h3>
               <p id="user-detail-intro" className="my-details">
-                Based in India with over a year of professional experience in building modern, 
-                scalable web applications. My journey in web development has been driven by 
-                curiosity and a genuine love for creating digital solutions that make a difference.
+                With over <strong>2 years of professional experience</strong>, I specialize in crafting 
+                modern, scalable web applications that solve real-world problems. My journey began 
+                with curiosity about how things work on the web, and has evolved into a deep passion 
+                for creating impactful digital solutions.
               </p>
+            </div>
+            
+            <div className="mern-stack-highlight">
+              <h4>My Core Stack</h4>
+              <div className="stack-icons">
+                <div className="stack-item">
+                  <SiMongodb />
+                  <span>MongoDB</span>
+                </div>
+                <div className="stack-item">
+                  <SiExpress />
+                  <span>Express</span>
+                </div>
+                <div className="stack-item">
+                  <SiReact />
+                  <span>React</span>
+                </div>
+                <div className="stack-item">
+                  <SiNodedotjs />
+                  <span>Node.js</span>
+                </div>
+              </div>
             </div>
             
             <div className="about-skills-overview">
@@ -38,8 +101,8 @@ function About() {
                   <FaLaptopCode />
                 </div>
                 <div className="skill-info">
-                  <h4>Frontend Development</h4>
-                  <p>React, JavaScript, HTML5, CSS3, SASS</p>
+                  <h4>Frontend Excellence</h4>
+                  <p>React, TypeScript, Next.js, Tailwind CSS, Redux</p>
                 </div>
               </div>
               
@@ -48,8 +111,8 @@ function About() {
                   <FaServer />
                 </div>
                 <div className="skill-info">
-                  <h4>Backend Development</h4>
-                  <p>Node.js, Express.js, MongoDB, APIs</p>
+                  <h4>Backend Mastery</h4>
+                  <p>Node.js, Express.js, MongoDB, REST APIs, PostgreSQL</p>
                 </div>
               </div>
               
@@ -58,23 +121,22 @@ function About() {
                   <FaMobile />
                 </div>
                 <div className="skill-info">
-                  <h4>UI/UX Design</h4>
-                  <p>Figma, Responsive Design, User Experience</p>
+                  <h4>Modern Practices</h4>
+                  <p>Git, CI/CD, Agile, Responsive Design, Performance</p>
                 </div>
               </div>
             </div>
             
             <div className="about-description">
               <p>
-                I specialize in the <strong>MERN stack</strong> and have hands-on experience 
-                with modern JavaScript frameworks. From crafting responsive user interfaces 
-                to building robust backend APIs, I enjoy every aspect of the development process.
+                I believe in writing <strong>clean, maintainable code</strong> that not only works 
+                but is a joy to work with. From architecting database schemas to crafting pixel-perfect 
+                UIs, I take pride in every aspect of the development process.
               </p>
               
               <p>
-                What drives me is the opportunity to solve real-world problems through code. 
-                I'm constantly learning new technologies and best practices to stay current 
-                with the ever-evolving web development landscape.
+                When I'm not coding, you'll find me exploring new technologies, contributing to 
+                open-source projects, or sharing knowledge with the developer community.
               </p>
             </div>
             
@@ -97,7 +159,7 @@ function About() {
                   });
                 }}
               >
-                Let's Talk
+                Let's Collaborate
               </button>
             </div>
           </div>
@@ -108,5 +170,3 @@ function About() {
 }
 
 export default About;
-
-
