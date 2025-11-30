@@ -23,16 +23,6 @@ function Home() {
       
       <div className="hero-content">
         <div className="hero-text">
-          <div className="hero-badge">
-            <span className="badge-dot"></span>
-            <span>Available for new opportunities</span>
-          </div>
-          
-          <div className="hero-greeting">
-            <span className="wave">👋</span>
-            <span>Hello, I'm</span>
-          </div>
-          
           <h1 id="user-detail-name" className="hero-name">
             <span className="name-line">Mohd</span>
             <span className="name-line accent">Adil</span>

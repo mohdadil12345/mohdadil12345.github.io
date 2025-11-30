@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import abc from "../assests/abc.png";
+import abc from "../assests/sastasafar.png";
 import abc2 from "../assests/grasmbile.png";
-import oddgrass from "../assests/odd grass.png";
+import oddgrass from "../assests/oddgrass.png";
 import dressify from "../assests/dressify.png";
-import oddgras from "../assests/oddgrass-2.png";
+import oddgras from "../assests/oddgrass.png";
 import olx from "../assests/olx-2.png";
 import olxx from "../assests/olxx.png";
-import iph from "../assests/iPhone 13f.png";
+import iph from "../assests/iPhone 13.png";
 import homechef from "../assests/homechef-1.png";
 import homechef2 from "../assests/homechef-2.png";
 import todo1 from "../assests/todo-1.png";
@@ -72,7 +72,7 @@ let projects = [
   {
     title: "Ecotourism Platform",
     img1: oddgrass,
-    img2: oddgras,
+    img2: oddgrass,
     category: "Web Application",
     description: "Travel booking platform with destination exploration, hotel booking, and activity planning. Clean UI/UX for seamless travel experience.",
     skills: [
@@ -286,26 +286,8 @@ function Projects() {
                 className="project-card" 
                 style={{ '--accent-color': project.color, '--delay': `${index * 0.1}s` }}
               >
-                <div className="card-image">
-                  <img src={project.img1} alt={project.title} />
-                  <div className="card-overlay">
-                    <a 
-                      href={project.preview} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="overlay-btn"
-                    >
-                      <FaExternalLinkAlt />
-                    </a>
-                    <a 
-                      href={project.git} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="overlay-btn"
-                    >
-                      <FaGithub />
-                    </a>
-                  </div>
+                <div className="card-image" style={{ boxShadow: 'var(--shadow-glow-lg)'}}>
+                  <img  style={{objectFit: 'contain', marginTop: '15px', paddingBottom: '15px'}} src={project.img1} alt={project.title} />
                 </div>
                 
                 <div className="card-content">
@@ -319,15 +301,27 @@ function Projects() {
                     ))}
                   </div>
                   
+                  <div style={{ display: 'flex', gap: '10px', justifyContent: 'space-between' }}>
+
                   <a 
                     href={project.preview} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="card-link"
-                  >
+                    >
                     <span>View Project</span>
                     <FaArrowRight />
                   </a>
+                  <a 
+                    href={project.git} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="card-link"
+                    >
+                    <span>Source Code</span>
+                    <FaArrowRight />
+                  </a>
+                    </div>
                 </div>
               </div>
             ))}

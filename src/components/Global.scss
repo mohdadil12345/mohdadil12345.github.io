@@ -570,6 +570,8 @@ code, pre {
       font-weight: 800;
       line-height: 1.05;
       margin-bottom: var(--space-md);
+      display: flex;
+      gap:30px;
       
       .name-line {
         display: block;
@@ -1531,7 +1533,6 @@ code, pre {
               border-radius: var(--radius-xl);
               overflow: hidden;
               box-shadow: var(--shadow-xl);
-              border: 4px solid var(--card-bg);
               transition: transform var(--transition-normal);
               
               img {
