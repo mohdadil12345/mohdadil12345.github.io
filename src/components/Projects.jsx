@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import sastasafar from "../assests/sastasafar.png";
 import abc from "../assests/abc.png";
 import abc2 from "../assests/grasmbile.png";
 import oddgrass from "../assests/odd grass.png";
@@ -13,9 +12,10 @@ import homechef2 from "../assests/homechef-2.png";
 import todo1 from "../assests/todo-1.png";
 import todo2 from "../assests/todo-2.png";
 
-import { FaCss3Alt, FaJsSquare, FaHtml5, FaExternalLinkAlt, FaGithub, FaNodeJs, FaSass } from "react-icons/fa";
+import { FaCss3Alt, FaJsSquare, FaHtml5, FaExternalLinkAlt, FaGithub, FaNodeJs, FaSass, FaArrowRight } from "react-icons/fa";
 import { FaReact, FaAngular } from "react-icons/fa6";
 import { SiTypescript } from "react-icons/si";
+import { HiOutlineCode } from "react-icons/hi";
 
 let projects = [
   {
@@ -32,7 +32,8 @@ let projects = [
     git: "https://github.com/mohdadil12345/Home_Chef",
     preview: "https://home-chef-neon.vercel.app/",
     featured: true,
-    highlights: ["Real-time Orders", "User Auth", "Payment Integration"]
+    highlights: ["Real-time Orders", "User Auth", "Payment Integration"],
+    color: "#f97316"
   },
   {
     title: "Sasta Safar",
@@ -48,7 +49,8 @@ let projects = [
     git: "https://github.com/mymsa123/quixotic-snail-9802",
     preview: "https://glittery-elf-a56a10.netlify.app/",
     featured: true,
-    highlights: ["Interactive UI", "Booking System", "Responsive Design"]
+    highlights: ["Interactive UI", "Booking System", "Responsive Design"],
+    color: "#10b981"
   },
   {
     title: "Dressify",
@@ -64,7 +66,8 @@ let projects = [
     git: "https://github.com/astik0398/ambiguous-oven-8467",
     preview: "https://dressify-eight.vercel.app/",
     featured: false,
-    highlights: ["Product Catalog", "Cart System", "Filters"]
+    highlights: ["Product Catalog", "Cart System", "Filters"],
+    color: "#8b5cf6"
   },
   {
     title: "Ecotourism Platform",
@@ -80,7 +83,8 @@ let projects = [
     git: "https://github.com/harsh7739/odd-grass-4307",
     preview: "https://resonant-meringue-f6cdea.netlify.app/",
     featured: false,
-    highlights: ["Search & Filter", "Booking Flow", "Gallery"]
+    highlights: ["Search & Filter", "Booking Flow", "Gallery"],
+    color: "#06b6d4"
   },
   {
     title: "OLX Clone",
@@ -96,7 +100,8 @@ let projects = [
     git: "https://github.com/mohdadil12345/gamy-part-5391",
     preview: "https://darling-souffle-a3c765.netlify.app/",
     featured: false,
-    highlights: ["Product Listings", "Categories", "Search"]
+    highlights: ["Product Listings", "Categories", "Search"],
+    color: "#ec4899"
   },
   {
     title: "Todo Application",
@@ -112,16 +117,15 @@ let projects = [
     git: "https://github.com/mohdadil12345/TODO_APP",
     preview: "https://todo-application-pied-phi.vercel.app/todo",
     featured: false,
-    highlights: ["CRUD Operations", "Local Storage", "TypeScript"]
+    highlights: ["CRUD Operations", "Local Storage", "TypeScript"],
+    color: "#ef4444"
   },
 ];
 
 function Projects() {
-  const [filter, setFilter] = useState("all");
+  const [activeProject, setActiveProject] = useState(0);
   const featuredProjects = projects.filter(project => project.featured);
   const otherProjects = projects.filter(project => !project.featured);
-  
-  const categories = ["all", "Full Stack", "Web Application", "E-commerce"];
 
   return (
     <section id="projects" className="projects-section">
@@ -134,123 +138,208 @@ function Projects() {
           </p>
         </div>
         
-        <div className="featured-projects">
-          {featuredProjects.map((project, index) => (
-            <div key={index} className="project-card featured" style={{ '--delay': `${index * 0.2}s` }}>
-              <div className="project-images">
-                <div className="project-image main">
-                  <img src={project.img1} alt={project.title} />
-                </div>
-                <div className="project-image secondary">
-                  <img src={project.img2} alt={project.title} />
-                </div>
-                <div className="project-image-overlay"></div>
-              </div>
-              
-              <div className="project-content">
-                <div className="project-header">
-                  <span className="project-category">{project.category}</span>
-                  <h3 className="project-title">{project.title}</h3>
-                </div>
-                
-                <p className="project-description">{project.description}</p>
-                
-                {project.highlights && (
-                  <div className="project-highlights">
-                    {project.highlights.map((highlight, idx) => (
-                      <span key={idx} className="highlight-tag">{highlight}</span>
-                    ))}
+        {/* Featured Projects - New Showcase Design */}
+        <div className="featured-showcase">
+          {/* Project Navigation Tabs */}
+          <div className="project-tabs">
+            {featuredProjects.map((project, index) => (
+              <button
+                key={index}
+                className={`project-tab ${activeProject === index ? 'active' : ''}`}
+                onClick={() => setActiveProject(index)}
+                style={{ '--accent-color': project.color }}
+              >
+                <span className="tab-number">0{index + 1}</span>
+                <span className="tab-title">{project.title}</span>
+                <span className="tab-category">{project.category}</span>
+              </button>
+            ))}
+          </div>
+          
+          {/* Active Project Display */}
+          <div className="project-display">
+            {featuredProjects.map((project, index) => (
+              <div 
+                key={index} 
+                className={`project-showcase ${activeProject === index ? 'active' : ''}`}
+                style={{ '--accent-color': project.color }}
+              >
+                {/* Image Section */}
+                <div className="showcase-images">
+                  <div className="image-wrapper">
+                    <div className="image-glow" style={{ background: project.color }}></div>
+                    <div className="main-image">
+                      <img src={project.img1} alt={project.title} />
+                    </div>
+                    <div className="secondary-image">
+                      <img src={project.img2} alt={`${project.title} mobile view`} />
+                    </div>
+                    <div className="image-decoration">
+                      <HiOutlineCode />
+                    </div>
                   </div>
-                )}
-                
-                <div className="project-tech-stack">
-                  <h4>Built With</h4>
-                  <div className="tech-stack-grid">
-                    {project.skills.map((skill, skillIndex) => (
-                      <div key={skillIndex} className="skills-card">
-                        <div className="skills-card-img">{skill.icon}</div>
-                        <span className="skills-card-name">{skill.name}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                
-                <div className="project-links">
-                  <a
-                    className="project-github-link"
-                    href={project.git}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaGithub />
-                    <span>Source Code</span>
-                  </a>
-                  <a
-                    className="project-deployed-link"
-                    href={project.preview}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaExternalLinkAlt />
-                    <span>Live Demo</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-        
-        <div className="other-projects">
-          <h3 className="subsection-title">Other Projects</h3>
-          <div className="projects-grid">
-            {otherProjects.map((project, index) => (
-              <div key={index} className="project-card compact" style={{ '--delay': `${index * 0.15}s` }}>
-                <div className="project-image">
-                  <img src={project.img1} alt={project.title} />
-                  <div className="project-overlay">
-                    <div className="project-links">
-                      <a
-                        className="project-github-link"
-                        href={project.git}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="View source code"
-                      >
-                        <FaGithub />
-                      </a>
-                      <a
-                        className="project-deployed-link"
-                        href={project.preview}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="View live demo"
-                      >
-                        <FaExternalLinkAlt />
-                      </a>
+                  
+                  {/* Quick Stats */}
+                  <div className="project-quick-stats">
+                    <div className="quick-stat">
+                      <span className="stat-value">{project.skills.length}</span>
+                      <span className="stat-label">Technologies</span>
+                    </div>
+                    <div className="quick-stat">
+                      <span className="stat-value">{project.highlights.length}</span>
+                      <span className="stat-label">Key Features</span>
                     </div>
                   </div>
                 </div>
                 
-                <div className="project-content">
-                  <span className="project-category">{project.category}</span>
-                  <h4 className="project-title">{project.title}</h4>
+                {/* Content Section */}
+                <div className="showcase-content">
+                  <div className="content-header">
+                    <span className="project-number">Project 0{index + 1}</span>
+                    <span className="project-category" style={{ background: project.color }}>
+                      {project.category}
+                    </span>
+                  </div>
+                  
+                  <h3 className="project-title">{project.title}</h3>
+                  
                   <p className="project-description">{project.description}</p>
                   
-                  <div className="project-tech-stack">
-                    {project.skills.map((skill, skillIndex) => (
-                      <span key={skillIndex} className="tech-tag">
-                        {skill.name}
-                      </span>
+                  {/* Features */}
+                  <div className="project-features">
+                    <h4>Key Features</h4>
+                    <div className="features-list">
+                      {project.highlights.map((feature, idx) => (
+                        <div key={idx} className="feature-item">
+                          <span className="feature-dot" style={{ background: project.color }}></span>
+                          <span>{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  {/* Tech Stack */}
+                  <div className="project-tech">
+                    <h4>Built With</h4>
+                    <div className="tech-list">
+                      {project.skills.map((skill, idx) => (
+                        <div key={idx} className="tech-item" style={{ '--accent': project.color }}>
+                          <span className="tech-icon">{skill.icon}</span>
+                          <span className="tech-name">{skill.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  {/* Action Buttons */}
+                  <div className="project-actions">
+                    <a 
+                      href={project.preview} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="action-btn primary"
+                      style={{ background: project.color }}
+                    >
+                      <span>View Live Demo</span>
+                      <FaExternalLinkAlt />
+                    </a>
+                    <a 
+                      href={project.git} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="action-btn secondary"
+                    >
+                      <FaGithub />
+                      <span>Source Code</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          {/* Progress Indicator */}
+          <div className="project-progress">
+            {featuredProjects.map((project, index) => (
+              <button
+                key={index}
+                className={`progress-dot ${activeProject === index ? 'active' : ''}`}
+                onClick={() => setActiveProject(index)}
+                style={{ '--accent': project.color }}
+                aria-label={`View ${project.title}`}
+              />
+            ))}
+          </div>
+        </div>
+        
+        {/* Other Projects Grid */}
+        <div className="other-projects">
+          <div className="other-projects-header">
+            <h3 className="subsection-title">More Projects</h3>
+            <p className="subsection-description">Other notable projects I've worked on</p>
+          </div>
+          
+          <div className="projects-grid">
+            {otherProjects.map((project, index) => (
+              <div 
+                key={index} 
+                className="project-card" 
+                style={{ '--accent-color': project.color, '--delay': `${index * 0.1}s` }}
+              >
+                <div className="card-image">
+                  <img src={project.img1} alt={project.title} />
+                  <div className="card-overlay">
+                    <a 
+                      href={project.preview} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="overlay-btn"
+                    >
+                      <FaExternalLinkAlt />
+                    </a>
+                    <a 
+                      href={project.git} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="overlay-btn"
+                    >
+                      <FaGithub />
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="card-content">
+                  <span className="card-category">{project.category}</span>
+                  <h4 className="card-title">{project.title}</h4>
+                  <p className="card-description">{project.description}</p>
+                  
+                  <div className="card-tech">
+                    {project.skills.map((skill, idx) => (
+                      <span key={idx} className="card-tech-tag">{skill.name}</span>
                     ))}
                   </div>
+                  
+                  <a 
+                    href={project.preview} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="card-link"
+                  >
+                    <span>View Project</span>
+                    <FaArrowRight />
+                  </a>
                 </div>
               </div>
             ))}
           </div>
         </div>
         
+        {/* CTA Section */}
         <div className="projects-cta">
-          <p>Want to see more of my work?</p>
+          <div className="cta-content">
+            <h3>Interested in more?</h3>
+            <p>Check out my GitHub profile for all my projects and contributions</p>
+          </div>
           <a 
             href="https://github.com/mohdadil12345" 
             target="_blank" 
@@ -258,7 +347,7 @@ function Projects() {
             className="btn btn-outline"
           >
             <FaGithub />
-            <span>View All on GitHub</span>
+            <span>View GitHub Profile</span>
           </a>
         </div>
       </div>
