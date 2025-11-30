@@ -7,7 +7,7 @@ import oddgras from "../assests/oddgrass.png";
 import olx from "../assests/olx-2.png";
 import olxx from "../assests/olxx.png";
 import iph from "../assests/iPhone 13.png";
-import homechef from "../assests/homechef-1.png";
+import homechef from "../assests/homechef.png";
 import homechef2 from "../assests/homechef-2.png";
 import todo1 from "../assests/todo-1.png";
 import todo2 from "../assests/todo-2.png";
