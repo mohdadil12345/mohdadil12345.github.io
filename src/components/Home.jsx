@@ -75,19 +75,7 @@ function Home() {
           </div>
           
           <div className="hero-buttons">
-            <Link
-              className="nav-link resume"
-              to="https://drive.google.com/file/d/1n6KjYZ5BTUlMTbuxPqijQjUVrQHfjRLc/view?usp=sharing"
-            >
-              <button
-                id="resume-button-2"
-                className="btn btn-primary"
-                onClick={resumedown2}
-              >
-                <FaRocket />
-                <span>Download CV</span>
-              </button>
-            </Link>
+        
             
             <button
               className="btn btn-secondary"

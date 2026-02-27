@@ -24,7 +24,7 @@ function Navbar() {
 
   const resumedown = () => {
     window.open(
-      "https://drive.google.com/file/d/1W2lUx0ty6bVhrldi1DYSFVTylpIIRZb8/view?usp=sharing",
+      "https://drive.google.com/file/d/1n6KjYZ5BTUlMTbuxPqijQjUVrQHfjRLc/view?usp=sharing",
       "_blank"
     );
     closeMenu();
