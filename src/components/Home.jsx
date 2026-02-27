@@ -106,13 +106,11 @@ function Home() {
             <a href="https://github.com/mohdadil12345" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <FaGithub />
             </a>
-            <a href="https://linkedin.com/in/mohdadil" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/mohd-adil-634b0b241/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
-            <a href="https://twitter.com/mohdadil" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-              <FaTwitter />
-            </a>
-            <a href="mailto:mohdadil@example.com" aria-label="Email">
+         
+            <a href="mailto:md3530546@gmail.com" aria-label="Email">
               <FaEnvelope />
             </a>
           </div>

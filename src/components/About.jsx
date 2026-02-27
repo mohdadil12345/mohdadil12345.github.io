@@ -25,8 +25,8 @@ function About() {
   return (
     <section id="about" className="about section">
       <div className="container">
-        <div className="section-header">
-          <span className="section-tag">Get to Know Me</span>
+        <div className="section-header" style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
+          {/* <span className="section-tag">Get to Know Me</span> */}
           <h2 className="section-title">About Me</h2>
           <p className="section-subtitle">
             Discover who I am, my journey, and what drives my passion for development
@@ -112,7 +112,7 @@ function About() {
                 </div>
                 <div className="skill-info">
                   <h4>Backend Mastery</h4>
-                  <p>Node.js, Express.js, MongoDB, REST APIs, PostgreSQL</p>
+                  <p>Node.js, Express.js, MongoDB, REST APIs</p>
                 </div>
               </div>
               

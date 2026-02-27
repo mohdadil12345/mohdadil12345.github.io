@@ -23,7 +23,9 @@ import {
   SiPostgresql,
   SiGraphql,
   SiJest,
-  SiPostman
+  SiPostman,
+  SiVercel,
+  SiRender
 } from "react-icons/si";
 
 const skillsData = {
@@ -43,17 +45,15 @@ const skillsData = {
     { name: "Node.js", icon: <FaNodeJs />, level: 90, color: "#339933" },
     { name: "Express.js", icon: <SiExpress />, level: 88, color: "#000000" },
     { name: "MongoDB", icon: <SiMongodb />, level: 88, color: "#47A248" },
-    { name: "PostgreSQL", icon: <SiPostgresql />, level: 78, color: "#4169E1" },
-    { name: "GraphQL", icon: <SiGraphql />, level: 75, color: "#E10098" },
     { name: "REST APIs", icon: <FaDatabase />, level: 92, color: "#FF6B6B" }
   ],
   "Tools & DevOps": [
     { name: "Git", icon: <FaGitAlt />, level: 90, color: "#F05032" },
-    { name: "Docker", icon: <FaDocker />, level: 72, color: "#2496ED" },
-    { name: "AWS", icon: <FaAws />, level: 68, color: "#FF9900" },
     { name: "Jest", icon: <SiJest />, level: 78, color: "#C21325" },
     { name: "Postman", icon: <SiPostman />, level: 85, color: "#FF6C37" },
-    { name: "Figma", icon: <FaFigma />, level: 80, color: "#F24E1E" }
+    { name: "Figma", icon: <FaFigma />, level: 80, color: "#F24E1E" },
+    { name: "Vercel (Frontend Deployments)", icon: <SiVercel />, level: 82, color: "#000000" },
+    { name: "Render (Backend Deployments)", icon: <SiRender />, level: 80, color: "#46E3B7" }
   ]
 };
 
