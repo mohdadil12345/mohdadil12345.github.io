@@ -1,32 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.49200875.css",
-    "main.js": "/static/js/main.486917ce.js",
+    "main.css": "/static/css/main.ecbb27ed.css",
+    "main.js": "/static/js/main.dbd8ac3b.js",
     "static/js/787.dc8e9947.chunk.js": "/static/js/787.dc8e9947.chunk.js",
-    "static/media/homechef-1.png": "/static/media/homechef-1.9d9005ab4bb63b1c215f.png",
+    "static/media/homechef.png": "/static/media/homechef.227340748ada446dd072.png",
     "static/media/homechef-2.png": "/static/media/homechef-2.de1f254226eed194666f.png",
-    "static/media/Saly-16.png": "/static/media/Saly-16.b5a2c08fa56f31d17526.png",
+    "static/media/ayera1.png": "/static/media/ayera1.f57c4cc7ff93f93d0fca.png",
+    "static/media/oddgrass.png": "/static/media/oddgrass.6efd317afd90cf876878.png",
     "static/media/olxx.png": "/static/media/olxx.885763f03384165b8ce9.png",
+    "static/media/ayera2.png": "/static/media/ayera2.cce92eb597fe3926f8b3.png",
+    "static/media/dressify.png": "/static/media/dressify.21f8efb42e05b608e241.png",
     "static/media/Saly-10.png": "/static/media/Saly-10.2959dc6e0abcd78b006f.png",
-    "static/media/iPhone 13f.png": "/static/media/iPhone 13f.79517322ada9a45cbff1.png",
+    "static/media/iPhone 13.png": "/static/media/iPhone 13.af8501b3e21fe790ff85.png",
     "static/media/todo-1.png": "/static/media/todo-1.4b2661d2e85c149b690a.png",
     "static/media/todo-2.png": "/static/media/todo-2.527cd699690e9d1d33dd.png",
+    "static/media/sastasafar.png": "/static/media/sastasafar.097bd1a0378dc103cb88.png",
     "static/media/grasmbile.png": "/static/media/grasmbile.d9eebf4971f868b69ea2.png",
-    "static/media/odd grass.png": "/static/media/odd grass.98622dcb7b12bdc3008a.png",
-    "static/media/sastasafar.png": "/static/media/sastasafar.58916667fa1043759b17.png",
-    "static/media/abc.png": "/static/media/abc.d4ce2ca2d0ca00dd85ca.png",
-    "static/media/dressify.png": "/static/media/dressify.353344c84ebcb16dcdf8.png",
-    "static/media/oddgrass-2.png": "/static/media/oddgrass-2.b1eb0072566a04557b5f.png",
     "static/media/me.png": "/static/media/me.af0cab5b68cd1149fb07.png",
     "static/media/olx-2.png": "/static/media/olx-2.c5c9c3a6020fe797a139.png",
-    "static/media/my img.jpeg": "/static/media/my img.62a7cd2d6c887e3f408d.jpeg",
     "index.html": "/index.html",
-    "main.49200875.css.map": "/static/css/main.49200875.css.map",
-    "main.486917ce.js.map": "/static/js/main.486917ce.js.map",
+    "main.ecbb27ed.css.map": "/static/css/main.ecbb27ed.css.map",
+    "main.dbd8ac3b.js.map": "/static/js/main.dbd8ac3b.js.map",
     "787.dc8e9947.chunk.js.map": "/static/js/787.dc8e9947.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49200875.css",
-    "static/js/main.486917ce.js"
+    "static/css/main.ecbb27ed.css",
+    "static/js/main.dbd8ac3b.js"
   ]
 }
