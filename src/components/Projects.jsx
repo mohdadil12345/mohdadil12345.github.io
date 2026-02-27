@@ -11,6 +11,8 @@ import homechef from "../assests/homechef.png";
 import homechef2 from "../assests/homechef-2.png";
 import todo1 from "../assests/todo-1.png";
 import todo2 from "../assests/todo-2.png";
+import ayera1 from "../assests/ayera1.png";
+import ayera2 from "../assests/ayera2.png";
 
 import { FaCss3Alt, FaJsSquare, FaHtml5, FaExternalLinkAlt, FaGithub, FaNodeJs, FaSass, FaArrowRight } from "react-icons/fa";
 import { FaReact, FaAngular } from "react-icons/fa6";
@@ -19,9 +21,9 @@ import { HiOutlineCode } from "react-icons/hi";
 
 let projects = [
   {
-    title: "Home Chef",
-    img1: homechef,
-    img2: homechef2,
+    title: "Ayera-Collections",
+    img1: ayera1,
+    img2: ayera2,
     category: "Full Stack",
     description: "A comprehensive food delivery platform with recipe discovery, meal planning, and seamless ordering. Built with MERN stack featuring real-time updates and intuitive UX.",
     skills: [
