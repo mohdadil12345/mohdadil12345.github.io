@@ -77,7 +77,7 @@ function Home() {
           <div className="hero-buttons">
             <Link
               className="nav-link resume"
-              to="https://drive.google.com/uc?export=download&id=1W2lUx0ty6bVhrldi1DYSFVTylpIIRZb8"
+              to="https://drive.google.com/file/d/1n6KjYZ5BTUlMTbuxPqijQjUVrQHfjRLc/view?usp=sharing"
             >
               <button
                 id="resume-button-2"

@@ -50,8 +50,8 @@ function Contact() {
               </div>
               <div className="contact-details">
                 <h3>Email</h3>
-                <p>mohdadil@example.com</p>
-                <a href="mailto:mohdadil@example.com">Send a message</a>
+                <p>md3530546@gmail.com</p>
+                <a href="mailto:md3530546@gmail.com">Send a message</a>
               </div>
             </div>
             
@@ -61,8 +61,8 @@ function Contact() {
               </div>
               <div className="contact-details">
                 <h3>Phone</h3>
-                <p>+91 123 456 7890</p>
-                <a href="tel:+911234567890">Give me a call</a>
+                <p>+91 7017511862</p>
+                <a href="tel:+917017511862">Give me a call</a>
               </div>
             </div>
             
@@ -83,15 +83,10 @@ function Contact() {
                 <a href="https://github.com/mohdadil12345" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <FaGithub />
                 </a>
-                <a href="https://linkedin.com/in/mohdadil" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/mohd-adil-634b0b241/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <FaLinkedin />
                 </a>
-                <a href="https://twitter.com/mohdadil" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                  <FaTwitter />
-                </a>
-                <a href="mailto:mohdadil@example.com" aria-label="Email">
-                  <FaEnvelope />
-                </a>
+               
               </div>
             </div>
           </div>
@@ -168,7 +163,7 @@ function Contact() {
           </p>
           <button 
             className="btn btn-outline"
-            onClick={() => window.open('https://drive.google.com/file/d/1W2lUx0ty6bVhrldi1DYSFVTylpIIRZb8/view?usp=sharing', '_blank')}
+            onClick={() => window.open('https://drive.google.com/file/d/1n6KjYZ5BTUlMTbuxPqijQjUVrQHfjRLc/view?usp=sharing', '_blank')}
           >
             <FaRocket />
             <span>Download My Resume</span>
