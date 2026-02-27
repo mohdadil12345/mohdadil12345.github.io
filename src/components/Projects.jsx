@@ -16,7 +16,7 @@ import ayera2 from "../assests/ayera2.png";
 
 import { FaCss3Alt, FaJsSquare, FaHtml5, FaExternalLinkAlt, FaGithub, FaNodeJs, FaSass, FaArrowRight } from "react-icons/fa";
 import { FaReact, FaAngular } from "react-icons/fa6";
-import { SiTypescript } from "react-icons/si";
+import { SiTypescript, SiMongodb, SiExpress } from "react-icons/si";
 import { HiOutlineCode } from "react-icons/hi";
 
 let projects = [
@@ -25,16 +25,19 @@ let projects = [
     img1: ayera1,
     img2: ayera2,
     category: "Full Stack",
-    description: "A comprehensive food delivery platform with recipe discovery, meal planning, and seamless ordering. Built with MERN stack featuring real-time updates and intuitive UX.",
+    description: "A complete e-commerce solution with admin dashboard and customer-facing shop. Includes product catalog management, order processing, shopping cart/wishlist functionality, and financial analytics dashboard.",
     skills: [
       { name: "React", icon: <FaReact /> },
       { name: "Node.js", icon: <FaNodeJs /> },
-      { name: "CSS", icon: <FaCss3Alt /> },
+      { name: "SASS", icon: <FaSass /> },
+      {name : "TypeScript", icon: <SiTypescript /> },
+      {name : "MongoDB", icon: <SiMongodb /> },
+      {name : "Express.js", icon: <SiExpress /> },
     ],
-    git: "https://github.com/mohdadil12345/Home_Chef",
-    preview: "https://home-chef-neon.vercel.app/",
+    git: "https://github.com/mohdadil12345/ayera_collections_new",
+    preview: "https://ayera-collections.vercel.app/",
     featured: true,
-    highlights: ["Real-time Orders", "User Auth", "Payment Integration"],
+    highlights: ["Admin Dashboard", "Customer-facing Shop", "Product Catalog Management", "Order Processing", "Shopping Cart/Wishlist", "Financial Analytics Dashboard"],
     color: "#f97316"
   },
   {
@@ -105,23 +108,7 @@ let projects = [
     highlights: ["Product Listings", "Categories", "Search"],
     color: "#ec4899"
   },
-  {
-    title: "Todo Application",
-    img1: todo1,
-    img2: todo2,
-    category: "Web Application",
-    description: "Feature-rich todo application with CRUD operations, local storage persistence, and modern Angular architecture. Built with TypeScript for type safety.",
-    skills: [
-      { name: "TypeScript", icon: <SiTypescript /> },
-      { name: "Angular", icon: <FaAngular /> },
-      { name: "SASS", icon: <FaSass /> },
-    ],
-    git: "https://github.com/mohdadil12345/TODO_APP",
-    preview: "https://todo-application-pied-phi.vercel.app/todo",
-    featured: false,
-    highlights: ["CRUD Operations", "Local Storage", "TypeScript"],
-    color: "#ef4444"
-  },
+ 
 ];
 
 function Projects() {
