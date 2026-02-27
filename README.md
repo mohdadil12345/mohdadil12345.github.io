@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+## Adil Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive **full-stack developer portfolio** for **Mohd Adil**, built with React and SCSS.  
+It showcases experience, skills, and selected projects, and is deployed to GitHub Pages.
 
-## Available Scripts
+### Live Demo
 
-In the project directory, you can run:
+- **Portfolio URL**: `http://mohdadil12345.github.io`
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Modern hero section** with name, role, stats, and social links
+- **About section** describing background and experience
+- **Skills section** with categorized skills and animated progress bars
+- **Projects section** highlighting featured and other projects with tech stack and links
+- **Contact section** with email, phone, location, and contact form UI
+- **Dark / light theme toggle** powered by a custom `ThemeContext`
+- **Responsive design** for desktop, tablet, and mobile
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+- **Frontend**: React, JavaScript, React Router
+- **Styling**: SCSS (`Global.scss`), CSS animations
+- **Icons**: `react-icons`
+- **State / Context**: React Context for theme
+- **Build Tooling**: Create React App (`react-scripts`)
+- **Deployment**: GitHub Pages (via `gh-pages`)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure (key files)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `src/App.jsx` – Wraps the app with `ThemeProvider`, renders `Navbar` and routed sections
+- `src/components/Navbar.jsx` – Top navigation with hash-based section links and theme toggle
+- `src/components/Home.jsx` – Hero/landing section
+- `src/components/About.jsx` – About me section
+- `src/components/Skills.jsx` – Skills & technologies cards
+- `src/components/Projects.jsx` – Featured and other projects
+- `src/components/Contact.jsx` – Contact info and form UI
+- `src/components/Github.jsx` – GitHub activity (calendar)
+- `src/components/ThemeToggle.jsx` – Dark/light mode toggle
+- `src/contexts/ThemeContext.js` – Theme context and provider
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started (Local Development)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone https://github.com/mohdadil12345/mohdadil12345.github.io.git
+cd mohdadil12345.github.io
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Install dependencies:**
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Run the development server:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
 
-### Code Splitting
+- Open `http://localhost:3000` in your browser.
+- The app will reload automatically when you edit files.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Build for Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To create an optimized production build in the `build` folder:
 
-### Making a Progressive Web App
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This bundles the app in production mode and optimizes the output for performance.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Deploy to GitHub Pages
 
-### Deployment
+This project is configured to deploy to GitHub Pages using the `gh-pages` package.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- `homepage` in `package.json` is set to `http://mohdadil12345.github.io`
+- Scripts in `package.json`:
+  - **`predeploy`**: `npm run build`
+  - **`deploy`**: `gh-pages -d build`
 
-### `npm run build` fails to minify
+### One-command deploy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+From the project root:
+
+```bash
+npm run deploy
+```
+
+This will:
+
+- Build the app (`npm run build`)
+- Publish the `build` folder to the `gh-pages` branch
+- Make the site available at `http://mohdadil123.github.io`
+
+---
+
+## Scripts Summary
+
+- **`npm start`** – Run locally in development mode
+- **`npm test`** – Run tests
+- **`npm run build`** – Create a production build
+- **`npm run deploy`** – Build and deploy to GitHub Pages
+
+---
+
+## License
+
+This portfolio project is for personal use and demonstration.  
+You are welcome to reference the structure and ideas, but please **do not copy content (text, images, branding) as-is** without permission.
