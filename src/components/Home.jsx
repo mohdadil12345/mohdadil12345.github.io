@@ -7,7 +7,7 @@ import { SiReact, SiNodedotjs, SiMongodb, SiTypescript } from "react-icons/si";
 function Home() {
   const resumedown2 = () => {
     window.open(
-      "https://drive.google.com/file/d/1W2lUx0ty6bVhrldi1DYSFVTylpIIRZb8/view?usp=sharing",
+      "https://drive.google.com/file/d/1SxRFBnPPiLA1yArzHsCDYcFfTK7qewAZ/view?usp=sharing",
       "_blank"
     );
   };

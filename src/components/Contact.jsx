@@ -42,7 +42,7 @@ function Contact() {
           </p>
           <button 
             className="btn btn-outline"
-            onClick={() => window.open('https://drive.google.com/file/d/1n6KjYZ5BTUlMTbuxPqijQjUVrQHfjRLc/view?usp=sharing', '_blank')}
+            onClick={() => window.open('https://drive.google.com/file/d/1SxRFBnPPiLA1yArzHsCDYcFfTK7qewAZ/view?usp=sharing', '_blank')}
           >
             <FaRocket />
             <span>Download My Resume</span>

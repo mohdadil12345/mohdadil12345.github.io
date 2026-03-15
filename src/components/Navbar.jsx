@@ -24,7 +24,7 @@ function Navbar() {
 
   const resumedown = () => {
     window.open(
-      "https://drive.google.com/file/d/1n6KjYZ5BTUlMTbuxPqijQjUVrQHfjRLc/view?usp=sharing",
+      "https://drive.google.com/file/d/1SxRFBnPPiLA1yArzHsCDYcFfTK7qewAZ/view?usp=sharing",
       "_blank"
     );
     closeMenu();
@@ -102,7 +102,7 @@ function Navbar() {
         <Link 
           className="nav-link resume"  
           onClick={() => goTo(false)} 
-          to="https://drive.google.com/uc?export=download&id=1W2lUx0ty6bVhrldi1DYSFVTylpIIRZb8"
+          to="https://drive.google.com/file/d/1SxRFBnPPiLA1yArzHsCDYcFfTK7qewAZ/view?usp=sharing"
         >
           <button
             id="resume-button-1" 
