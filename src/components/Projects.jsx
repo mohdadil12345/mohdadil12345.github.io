@@ -58,6 +58,11 @@ let projects = [
     ],
     git: "https://github.com/mohdadil12345/home-chef",
     preview: "https://apnahomechef.vercel.app/",
+    previewLinks: [
+      { label: "Customer", url: "https://apnahomechef.vercel.app/" },
+      { label: "Admin", url: "https://admin-apnahomechef.vercel.app/" },
+      { label: "Super Admin", url: "https://superadmin-apnahomechef.vercel.app/" }
+    ],
     featured: true,
     highlights: ["User Authentication & Authorization", "Shopping Cart & Checkout", "Order Management System", 
      "Super Admin Dashboard", "Admin Management", 
@@ -246,16 +251,32 @@ function Projects() {
                   
                   {/* Action Buttons */}
                   <div className="project-actions">
-                    <a 
-                      href={project.preview} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="action-btn primary"
-                      style={{ background: project.color }}
-                    >
-                      <span>View Live Demo</span>
-                      <FaExternalLinkAlt />
-                    </a>
+                    {project.previewLinks ? (
+                      project.previewLinks.map((link, idx) => (
+                        <a 
+                          key={idx}
+                          href={link.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="action-btn primary"
+                          style={{ background: project.color }}
+                        >
+                          <span>View {link.label} Demo</span>
+                          <FaExternalLinkAlt />
+                        </a>
+                      ))
+                    ) : (
+                      <a 
+                        href={project.preview} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="action-btn primary"
+                        style={{ background: project.color }}
+                      >
+                        <span>View Live Demo</span>
+                        <FaExternalLinkAlt />
+                      </a>
+                    )}
                     <a 
                       href={project.git} 
                       target="_blank" 
