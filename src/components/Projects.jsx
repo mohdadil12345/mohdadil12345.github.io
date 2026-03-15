@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import abc from "../assests/sastasafar.png";
 import abc2 from "../assests/grasmbile.png";
+import iph from "../assests/iPhone 13.png";
 import oddgrass from "../assests/oddgrass.png";
 import dressify from "../assests/dressify.png";
 import oddgras from "../assests/oddgrass.png";
 import olx from "../assests/olx-2.png";
 import olxx from "../assests/olxx.png";
-import iph from "../assests/iPhone 13.png";
 import homechef from "../assests/homechef.png";
-import homechef2 from "../assests/homechef-2.png";
+import homechef2 from "../assests/desktop1.png";
+import homechefMobile from "../assests/homechef-mbileview.png";
+import homechefTablet from "../assests/homechef-tabletview.png";
 import todo1 from "../assests/todo-1.png";
 import todo2 from "../assests/todo-2.png";
 import ayera1 from "../assests/ayera1.png";
@@ -16,7 +18,7 @@ import ayera2 from "../assests/ayera2.png";
 
 import { FaCss3Alt, FaJsSquare, FaHtml5, FaExternalLinkAlt, FaGithub, FaNodeJs, FaSass, FaArrowRight } from "react-icons/fa";
 import { FaReact, FaAngular } from "react-icons/fa6";
-import { SiTypescript, SiMongodb, SiExpress } from "react-icons/si";
+import { SiTypescript, SiMongodb, SiExpress, SiCypress } from "react-icons/si";
 import { HiOutlineCode } from "react-icons/hi";
 
 let projects = [
@@ -33,12 +35,34 @@ let projects = [
       {name : "TypeScript", icon: <SiTypescript /> },
       {name : "MongoDB", icon: <SiMongodb /> },
       {name : "Express.js", icon: <SiExpress /> },
+      {name : "cypress", icon: <SiCypress /> },
     ],
     git: "https://github.com/mohdadil12345/ayera_collections_new",
     preview: "https://ayera-collections.vercel.app/",
     featured: true,
     highlights: ["Admin Dashboard", "Customer-facing Shop", "Product Catalog Management", "Order Processing", "Shopping Cart/Wishlist", "Financial Analytics Dashboard"],
     color: "#f97316"
+  },
+  {
+    title: "HomeChef",
+    img1: homechef2,
+    img2: homechefMobile,
+    category: "Full Stack",
+    description: "Full-stack food delivery web application built with MERN stack. Features meal browsing, cart management, order processing, and comprehensive admin dashboard with real-time notifications, multi-language support, and sales analytics.",
+    skills: [
+      { name: "React", icon: <FaReact /> },
+      { name: "Node.js", icon: <FaNodeJs /> },
+      { name: "Express.js", icon: <SiExpress /> },
+      { name: "MongoDB", icon: <SiMongodb /> },
+      { name: "SASS", icon: <FaSass /> },
+    ],
+    git: "https://github.com/mohdadil12345/home-chef",
+    preview: "https://apnahomechef.vercel.app/",
+    featured: true,
+    highlights: ["User Authentication & Authorization", "Shopping Cart & Checkout", "Order Management System", 
+     "Super Admin Dashboard", "Admin Management", 
+      "Real-time Notifications", "Wishlist Functionality", "Sales Reporting & Analytics"],
+    color: "#ef4444"
   },
   {
     title: "Sasta Safar",
@@ -53,7 +77,7 @@ let projects = [
     ],
     git: "https://github.com/mymsa123/quixotic-snail-9802",
     preview: "https://glittery-elf-a56a10.netlify.app/",
-    featured: true,
+    featured: false,
     highlights: ["Interactive UI", "Booking System", "Responsive Design"],
     color: "#10b981"
   },
