@@ -1,10 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.ecbb27ed.css",
-    "main.js": "/static/js/main.dbd8ac3b.js",
+    "main.js": "/static/js/main.36d2da37.js",
     "static/js/787.dc8e9947.chunk.js": "/static/js/787.dc8e9947.chunk.js",
+    "static/media/homechef-tabletview.png": "/static/media/homechef-tabletview.bbdb828826cc362631c0.png",
     "static/media/homechef.png": "/static/media/homechef.227340748ada446dd072.png",
-    "static/media/homechef-2.png": "/static/media/homechef-2.de1f254226eed194666f.png",
+    "static/media/homechef-mbileview.png": "/static/media/homechef-mbileview.56e0ff0489566520b2f5.png",
+    "static/media/desktop1.png": "/static/media/desktop1.903a1e21e9f8abe341c8.png",
     "static/media/ayera1.png": "/static/media/ayera1.f57c4cc7ff93f93d0fca.png",
     "static/media/oddgrass.png": "/static/media/oddgrass.6efd317afd90cf876878.png",
     "static/media/olxx.png": "/static/media/olxx.885763f03384165b8ce9.png",
@@ -20,11 +22,11 @@
     "static/media/olx-2.png": "/static/media/olx-2.c5c9c3a6020fe797a139.png",
     "index.html": "/index.html",
     "main.ecbb27ed.css.map": "/static/css/main.ecbb27ed.css.map",
-    "main.dbd8ac3b.js.map": "/static/js/main.dbd8ac3b.js.map",
+    "main.36d2da37.js.map": "/static/js/main.36d2da37.js.map",
     "787.dc8e9947.chunk.js.map": "/static/js/787.dc8e9947.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ecbb27ed.css",
-    "static/js/main.dbd8ac3b.js"
+    "static/js/main.36d2da37.js"
   ]
 }
